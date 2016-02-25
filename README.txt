@@ -3,6 +3,7 @@ Overview: I still have to bind and sequence testing and automation. However, the
 Installations: I added a package.json, so you should just be able to do npm install to install these. 
 -cucumberjs: https://www.npmjs.com/package/cucumber
 -selenium_web_driver: https://www.npmjs.com/package/selenium-webdriver
+-zombie: https://www.npmjs.com/package/zombie
 
 Testing: You can run 'cucumberjs' in the terminal after installing the packages (npm install) from the root directory
 -Use cucumberjs in the terminal to run tests (not cucumber)
