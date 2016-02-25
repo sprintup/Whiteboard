@@ -1,0 +1,28 @@
+#This will be set once before the logWorkout feature executes. The base url is the calendar page. 
+#AUTOMATION STEPS
+#-when logged in
+#	-access the dropdown and press 'settings'
+#	-press 'zones'
+#	-find and set textfields for 
+#		-default heart rate threshold values
+#			-[]threshold heart rate (145)
+#			-[]max heart rate (190)
+#			-[]resting heart rate (60)
+#		-swim heart rate threshold values
+#			-[]threshold heart rate (135)
+#			-[]max heart rate (190)
+#			-[]resting heart rate (60)
+#		-bike heart rate threshold values
+#			-[]threshold heart rate (150)
+#			-[]max heart rate (190)
+#			-[]resting heart rate (60)
+#		-run heart rate threshold values
+#			-[]threshold heart rate (150)
+#			-[]max heart rate (190)
+#			-[]resting heart rate (60)
+#		-walk heart rate threshold values
+#			-[]threshold heart rate (125)
+#			-[]max heart rate (190)
+#			-[]resting heart rate (60)
+
+

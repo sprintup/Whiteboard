@@ -1,0 +1,32 @@
+#This will be repeated 12 times, once for every type of workout. 
+#TODO: Test UI only once and move these tests to the core. 
+#TODO: Push each test into helper method in seperate class to call.
+#TODO: Use hook to clean environment between scenarios 
+#		AUTOMATION STEPS
+#-wait until calendar loads 
+#-find today
+#-press the plus button
+#-click *workoutType
+#-input duration of 1:00:00
+#-input average heart rate (same as workoutType threshold)
+#-press save & close
+#	-might have to deal with pop-up
+#-find workout that was just saved and open
+#-view if tTSS equals 100, then pass
+#-press delete
+#-repeat with new workout type
+#		Types of workouts:
+#1-run: test with run threshold values
+#2-bike: test with bike threshold values
+#3-swim: test with swim threshold values
+#4-brick: test with default threshold values
+#5-crosstrain: test with default threshold values
+# -dayoff: don't test
+#6-mtn bike: test with default threshold values
+#7-strength: test with default threshold values
+#8-custom: test with default threshold values
+#9-XC-Ski: test with default threshold values
+#10-rowing: test with default threshold values
+#11-other: test with default threshold values
+#12-walk: test with walk threshold values
+

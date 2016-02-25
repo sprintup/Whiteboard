@@ -1,0 +1,60 @@
+"use strict";
+
+/*
+NOTES:
+webelement docs  http://appfigures.github.io/webdriver-js-api-reference/symbols/webdriver.WebElement.html
+promises 
+*/
+console.log('recordWorkout started');
+/*
+This file records workouts. Browser must be fully loaded with web app.  
+*/
+var webdriver = require('selenium-webdriver');
+var browser = require('./loggingIn.js');
+var document = browser.getElementsByClassName('document');
+
+function findToday() {
+		/*
+		This is today. It has 2 divs. The second is under class 'addWorkout wrapper'. In that div there is an add workout div to select.
+		var a = document.getElementsByClassName('dayWidth dayContainer day today');
+		*/
+
+		/*
+		This lists all of the add workout buttons in an array. Use .item to find index. The monday of the visible week is index 70. 
+		*/
+		var b = document.getElementsByClassName('addWorkout')
+
+		/*
+		Here is the xpath expression that works in chrome browser
+		$x("//div[@class='addWorkout']")[70].click()
+		*/
+
+	return b.item(70); 
+}
+
+/*
+function findToday () {
+	return browser.findElement(webdriver.By.xpath("//div[@class='addWorkout']"));
+}
+
+function clickLink(links) {
+	linkToClick = links [70];
+	linkToClick.click();
+}
+
+function extractDayToEdit (arrayOfAddWorkout){
+	return arrayOfAddWorkout[72];
+}
+
+var dayToEdit = browser.call(function(){
+	console.log('inside callback with webElements: ' + webElements);
+	var i = extractDayToEdit(webElements)
+	console.log('also with var i: ' + i);
+});
+*/
+
+// webdriver.click(webdriver.By.xpath("//div[@class='addWorkout']"));		[70].click()
+// browser.executeScript("xpath = //div[@class='addWorkout']");
+
+
+browser.findToday().click(); 
