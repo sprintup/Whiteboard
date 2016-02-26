@@ -21,14 +21,36 @@ browser.sleep(9000);
 	Logged in and loaded. Recording manual workout below.
 */
 
-browser.findElements(webdriver.By.xpath("//div[@class='addWorkout']")).then(function(e){
-	console.log(e[70]); //e[70] is the web element to click 
-	e[70].click; //TODO: Make this click
-
-	browser.executeScript('document.getElementsByClassName(\'addWorkout\')[70].click()');
-});
+browser.executeScript('document.getElementsByClassName(\'addWorkout\')[70].click()');
+browser.executeScript('document.getElementsByClassName(\'addWorkout Run future\')[0].click()');
+browser.executeScript('document.getElementById(\'totalTimeCompletedField\').value=\'1:00:00\'');
+browser.executeScript('document.getElementById(\'hrAvgField\').value=\'150\'');
+browser.executeScript('document.getElementById(\'close\').click()');
 
 module.exports = browser; 
+/*
+Class names:
+addWorkout Run future
+addWorkout Bike future
+addWorkout Swim future
+addWorkout Swim future
+addWorkout Crosstrain future
+addWorkout DayOff future
+addWorkout MountainBike future
+addWorkout Strength future
+addWorkout Custom future
+addWorkout XC-Ski future
+addWorkout Rowing future
+addWorkout Other future
+addWorkout Walk future
+
+ID of Inputs:
+totalTimeCompletedField	
+hrAvgField
+close
+*/
+
+
 /*
 Inject this as javascript to open the day to edit: document.getElementsByClassName('addWorkout')[70].click()
 */

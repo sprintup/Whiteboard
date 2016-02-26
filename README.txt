@@ -14,3 +14,6 @@ Automation:
 -To see it log in and run after the page loads run 'node.driver' from inside the webDriver folder. 
 -You might have to include the latest chrome web driver binary in your path for it to automate. 
 -You have to replace the passwords in driver.js in webDriver
+
+Future Upgrades:
+-Implicit wait after login
