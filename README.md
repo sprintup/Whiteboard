@@ -23,3 +23,4 @@ You can run 'cucumberjs' in the terminal after installing the packages (npm inst
 
 ##### Future Upgrades:
 * Implicit wait after login
+* Clean Environment after every scenario is run.
