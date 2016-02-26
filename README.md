@@ -1,4 +1,4 @@
-## Update: Tests fail on user login. 
+# Update: Tests fail on user login. 
 
 ## Overview: I still have to bind and sequence testing and automation. However, they are both started in their respective files. I used cucumberjs and seleniumjs, which were both not the native language. Given more time, I could learn Java to implement this testing scenario, as I've learned a great deal for how they work in Java. 
 
