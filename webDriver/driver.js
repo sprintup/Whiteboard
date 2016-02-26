@@ -22,10 +22,18 @@ browser.sleep(9000);
 */
 
 browser.executeScript('document.getElementsByClassName(\'addWorkout\')[70].click()');
+browser.sleep(1000);
 browser.executeScript('document.getElementsByClassName(\'addWorkout Run future\')[0].click()');
-browser.executeScript('document.getElementById(\'totalTimeCompletedField\').value=\'1:00:00\'');
-browser.executeScript('document.getElementById(\'hrAvgField\').value=\'150\'');
-browser.executeScript('document.getElementById(\'close\').click()');
+browser.sleep(1000);
+// browser.executeScript('document.getElementById(\'totalTimeCompletedField\')').sendKeys('1:00:00');
+browser.findElement(webdriver.By.id('totalTimeCompletedField')).sendKeys('1:00:00');
+
+browser.sleep(1000);
+// browser.executeScript('document.getElementById(\'hrAvgField\')').sendKeys('150');
+// browser.sleep(1000);
+// browser.executeScript('document.getElementById(\'close\').click()');
+browser.findElement(webdriver.By.id('close')).click();
+
 
 module.exports = browser; 
 /*
