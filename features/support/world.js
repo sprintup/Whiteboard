@@ -1,5 +1,7 @@
 var zombie = require('zombie');
-
+var webdriver = require('selenium-webdriver'),
+    By = webdriver.By,
+    until = webdriver.until;
 /*
 	Domain World: For testing the core
 */
@@ -18,9 +20,6 @@ function DomainWorld() {
 */
 
 function buildChromeDriver () {
-	var webdriver = require('selenium-webdriver'),
-	    By = webdriver.By,
-	    until = webdriver.until;
 	var browser = new webdriver.Builder()	
 			.usingServer()
 			.withCapabilities({'browserName': 'chrome' })
@@ -31,19 +30,19 @@ function buildChromeDriver () {
 function WebWorld() {
 	this.browser = new zombie();
 
-	browser.get('http://home.trainingpeaks.com/login');
-	browser.findElement(webdriver.By.id('Username')).sendKeys(username);
-	browser.findElement(webdriver.By.id('Password')).sendKeys(password);
-	browser.findElement(webdriver.By.id('btnSubmit')).click();
-	browser.sleep(9000);
+  this.visit = function (url, callback) {
+    this.browser.visit(url, callback);
+  };
+	this.browser.chromeDriver = buildChromeDriver;   
 };
 
 /*
 	Export the world of your choice
+	TODO: Set test depth
 */
 
 var World = function World () {
-  this.World = DomainWorld;
+  this.World = WebWorld;			//TODO: MAKE SWITCH TO CHANGE WORLD HERE
   return DomainWorld;
 }
 
