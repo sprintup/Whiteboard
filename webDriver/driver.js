@@ -12,8 +12,8 @@ var browser = new webdriver.Builder()
 		.build();
 
 browser.get('http://home.trainingpeaks.com/login');
-browser.findElement(webdriver.By.id('Username')).sendKeys('enterusernamehere');
-browser.findElement(webdriver.By.id('Password')).sendKeys('enterpasswordhere');
+browser.findElement(webdriver.By.id('Username')).sendKeys('');
+browser.findElement(webdriver.By.id('Password')).sendKeys('');
 browser.findElement(webdriver.By.id('btnSubmit')).click();
 browser.sleep(9000);
 
@@ -25,10 +25,13 @@ browser.findElements(webdriver.By.xpath("//div[@class='addWorkout']")).then(func
 	console.log(e[70]); //e[70] is the web element to click 
 	e[70].click; //TODO: Make this click
 
-	browser.executeScript('window.alert()');
+	browser.executeScript('document.getElementsByClassName(\'addWorkout\')[70].click()');
 });
 
 module.exports = browser; 
+/*
+Inject this as javascript to open the day to edit: document.getElementsByClassName('addWorkout')[70].click()
+*/
 
 /*
 Here is the xpath expression that works in chrome browser
