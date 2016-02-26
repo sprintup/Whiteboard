@@ -11,31 +11,36 @@ var browser = new webdriver.Builder()
 		.withCapabilities({'browserName': 'chrome' })
 		.build();
 
-browser.get('http://home.trainingpeaks.com/login');
-browser.findElement(webdriver.By.id('Username')).sendKeys('');
-browser.findElement(webdriver.By.id('Password')).sendKeys('');
-browser.findElement(webdriver.By.id('btnSubmit')).click();
-browser.sleep(9000);
+function logIn (username, password) {
+	// body...
+	browser.get('http://home.trainingpeaks.com/login');
+	browser.findElement(webdriver.By.id('Username')).sendKeys(username);
+	browser.findElement(webdriver.By.id('Password')).sendKeys(password);
+	browser.findElement(webdriver.By.id('btnSubmit')).click();
+	browser.sleep(9000);
+};
+// browser.custom.logIn = logIn;
 
 /*
-	Logged in and loaded. Recording manual workout below.
+	Logged in and loaded. Recording manual.
 */
 
-browser.executeScript('document.getElementsByClassName(\'addWorkout\')[70].click()');
-browser.sleep(1000);
-browser.executeScript('document.getElementsByClassName(\'addWorkout Run future\')[0].click()');
-browser.sleep(1000);
-// browser.executeScript('document.getElementById(\'totalTimeCompletedField\')').sendKeys('1:00:00');
-browser.findElement(webdriver.By.id('totalTimeCompletedField')).sendKeys('1:00:00');
+// browser.executeScript('document.getElementsByClassName(\'addWorkout\')[70].click()');
+// browser.executeScript('document.getElementsByClassName(\'addWorkout Run future\')[0].click()'); //switch workout type here
+// browser.findElement(webdriver.By.id('totalTimeCompletedField')).sendKeys('1:00:00');
+// browser.findElement(webdriver.By.id('hrAvgField')).sendKeys('150');
+// browser.findElement(webdriver.By.id('close')).click();
 
-browser.sleep(1000);
-// browser.executeScript('document.getElementById(\'hrAvgField\')').sendKeys('150');
-// browser.sleep(1000);
-// browser.executeScript('document.getElementById(\'close\').click()');
-browser.findElement(webdriver.By.id('close')).click();
+/*
+	Workout recorded. Open and test if tTSS was recorded properly
+*/
+// browser.sleep(2000);
+// browser.executeScript('document.getElementsByClassName(\'workoutSelected\')[0].click()');
+
 
 
 module.exports = browser; 
+
 /*
 Class names:
 addWorkout Run future
