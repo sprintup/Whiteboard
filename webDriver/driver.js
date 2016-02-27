@@ -12,10 +12,10 @@ var browser = new webdriver.Builder()
 		.build();
 
 browser.get('http://home.trainingpeaks.com/login');
-browser.findElement(webdriver.By.id('Username')).sendKeys(username);
-browser.findElement(webdriver.By.id('Password')).sendKeys(password);
+browser.findElement(webdriver.By.id('Username')).sendKeys('');
+browser.findElement(webdriver.By.id('Password')).sendKeys('');
 browser.findElement(webdriver.By.id('btnSubmit')).click();
-browser.sleep(9000);
+browser.sleep(15000);
 
 /*
 	Logged in and loaded. Recording manual.

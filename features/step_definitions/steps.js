@@ -1,12 +1,13 @@
 module.exports = function () {
 	this.Given(/^The browser opens to the login page$/, function (callback) {
 	  // Write code here that turns the phrase above into concrete actions			//TODO: create before hook for webdriver
+	 	console.log('hi');
 	 	
 	  /*
 	  This code opens the page
   	browser.get('http://home.trainingpeaks.com/login');
 	  */
-	  callback.pending();
+	  callback('s');
 	});
 
 	this.When(/^User enters username$/, function (callback) {
