@@ -1,18 +1,21 @@
 module.exports = function () {
+
+  this.World = require('../support/world').World;
+
 	this.Given(/^The browser opens to the login page$/, function (callback) {
-	  // Write code here that turns the phrase above into concrete actions			//TODO: create before hook for webdriver
-	 	console.log('hi');
-	 	
+
+    this.logIn('','');
+
 	  /*
 	  This code opens the page
   	browser.get('http://home.trainingpeaks.com/login');
 	  */
-	  callback('s');
+	  callback('callback');
 	});
 
 	this.When(/^User enters username$/, function (callback) {
 	  // Write code here that turns the phrase above into concrete actions
-
+    this.clickAddGroceryListItem();
 	  /*
 	  This code logs enters a username
 		browser.findElement(webdriver.By.id('Username')).sendKeys(username);

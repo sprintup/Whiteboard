@@ -26,7 +26,6 @@ You can run 'cucumberjs' in the terminal after installing the packages (npm inst
 * Clean Environment after every scenario is run.
 
 #### Tips:
-* cucumberjs --help
-
+* CLI Command: cucumberjs --help
 * Supported Formatting styles
 	* cucumberjs --format progress

@@ -10,7 +10,21 @@ var myHooks = function () {
 
     // this.bootFullTextSearchServer();
     // this.createSomeUsers();
+    // console.log('inside hooks.js ');
+    // this.webdriver = require('selenium-webdriver'),
+    // By = webdriver.By,
+    // until = webdriver.until;
+    // this.browser = new webdriver.Builder()  
+    // .usingServer()
+    // .withCapabilities({'browserName': 'chrome' })
+    // .build();
 
+    // this.browser.get('http://home.trainingpeaks.com/login');
+    // this.browser.findElement(webdriver.By.id('Username')).sendKeys('');
+    // this.browser.findElement(webdriver.By.id('Password')).sendKeys('');
+    // this.browser.findElement(webdriver.By.id('btnSubmit')).click();
+    // this.browser.sleep(15000);
+    // console.log('after selenium code in step with this: ' + this);
   });
 };
 
