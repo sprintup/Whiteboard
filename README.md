@@ -1,8 +1,7 @@
-##Update
-I found this [example](https://github.com/Matt-B/cucumber-js-selenium-webdriver-example) that launches a browser with cucumberjs command, but I'm still recreating it in this project because I don't want to use everything that project is using. 
+##Update log
+* I found this [example](https://github.com/Matt-B/cucumber-js-selenium-webdriver-example) that launches a browser with cucumberjs command, but I'm still recreating it in this project because I don't want to use everything that project is using. 
 
-## Update 
-Tests fail on user login. You can run the driver.js file with 'node driver' and watch it log a run with the proper time, save and reenter to view the tSS. I'm working on integrating a test for this using cucumber. 
+* Tests fail on user login. You can run the driver.js file with 'node driver' and watch it log a run with the proper time, save and reenter to view the tSS. I'm working on integrating a test for this using cucumber. 
 
 ### Overview
 I still have to bind and sequence testing and automation. However, they are both started in their respective files. I used cucumberjs and seleniumjs, which were both not the native language. Given more time, I could learn Java to implement this testing scenario, as I've learned a great deal for how they work in Java. 
