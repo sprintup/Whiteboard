@@ -3,8 +3,8 @@ module.exports = function () {
   this.World = require('../support/world').World;
 
 	this.Given(/^The browser opens to the login page$/, function (callback) {
-		console.log(this.driver);
-		this.driver = this.buildChromeDriver;	
+		// console.log(this.driver);
+		// this.driver = this.buildChromeDriver;	
     this.driver.get('http://www.google.com');
 
     // this.logIn('','');

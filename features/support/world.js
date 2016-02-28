@@ -129,6 +129,7 @@ switch(platform) {
 }
 
 var getDriver = function() {
+  console.log('inside getDriver');        //TODO: MAKE THIS RETURN THE CHROME DRIVER
   return driver;
 };
 

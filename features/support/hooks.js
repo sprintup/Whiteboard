@@ -1,3 +1,10 @@
+'use strict';
+
+var driver = require('./world.js').getDriver();
+
+
+
+
 var myHooks = function () {
   this.Before(function (scenario) {
     // Just like inside step definitions, "this" is set to a World instance.

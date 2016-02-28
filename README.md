@@ -3,8 +3,10 @@
 
 * Tests fail on user login. You can run the driver.js file with 'node driver' and watch it log a run with the proper time, save and reenter to view the tSS. I'm working on integrating a test for this using cucumber. 
 
+* I still have to bind and sequence testing and automation. However, they are both started in their respective files. I used cucumberjs and seleniumjs, which were both not the native language. Given more time, I could learn Java to implement this testing scenario, as I've learned a great deal for how they work in Java. 
+
 ### Overview
-I still have to bind and sequence testing and automation. However, they are both started in their respective files. I used cucumberjs and seleniumjs, which were both not the native language. Given more time, I could learn Java to implement this testing scenario, as I've learned a great deal for how they work in Java. 
+An automated code test that logs into a website, finds elements and tests caluculated values. 
 
 ### Installations
 I added a package.json, so you should just be able to do npm install to install these. 
