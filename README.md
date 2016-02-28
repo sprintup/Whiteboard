@@ -14,7 +14,7 @@ I added a package.json, so you should just be able to do npm install to install 
 
 ```
 npm install 
-
+cucumberjs
 ```
 #### Testing
 You can run 'cucumberjs' in the terminal after installing the packages (npm install) from the root directory
