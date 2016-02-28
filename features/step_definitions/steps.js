@@ -5,7 +5,7 @@ module.exports = function () {
 	this.Given(/^The browser opens to the login page$/, function (callback) {
 		// console.log(this.driver);
 		// this.driver = this.buildChromeDriver;	
-    this.driver.get('http://www.google.com');
+    this.driver.get('http://home.trainingpeaks.com/login');
 
     // this.logIn('','');
 	  /*
@@ -17,8 +17,7 @@ module.exports = function () {
 
 	this.When(/^User enters username$/, function (callback) {
 	  // Write code here that turns the phrase above into concrete actions
-    // this.clickAddGroceryListItem();
-	  /*
+	browser.findElement(webdriver.By.id('Username')).sendKeys(username);	  /*
 	  This code logs enters a username
 		browser.findElement(webdriver.By.id('Username')).sendKeys(username);
 	  */

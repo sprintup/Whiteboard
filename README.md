@@ -1,9 +1,5 @@
 ##Update log
-* I found this [example](https://github.com/Matt-B/cucumber-js-selenium-webdriver-example) that launches a browser with cucumberjs command, but I'm still recreating it in this project because I don't want to use everything that project is using. 
-
-* Tests fail on user login. You can run the driver.js file with 'node driver' and watch it log a run with the proper time, save and reenter to view the tSS. I'm working on integrating a test for this using cucumber. 
-
-* I still have to bind and sequence testing and automation. However, they are both started in their respective files. I used cucumberjs and seleniumjs, which were both not the native language. Given more time, I could learn Java to implement this testing scenario, as I've learned a great deal for how they work in Java. 
+*The terminal command cucumberjs now opens and directs the browser to start testing.  
 
 ### Overview
 An automated code test that logs into a website, finds elements and tests caluculated values. 
@@ -29,10 +25,11 @@ You can run 'cucumberjs' in the terminal after installing the packages (npm inst
 * You might have to include the latest chrome web driver binary in your path for it to automate. It's available [here](http://chromedriver.storage.googleapis.com/index.html);
 * You have to replace the passwords in driver.js in webDriver
 
-##### Future Upgrades:
+#### Future Upgrades:
 * Implicit wait after login
 * Clean Environment after every scenario is run.
 * Put username and password in config file
+* Have it take screenshots when tests fail.
 
 #### Tips:
 * CLI Command: cucumberjs --help
