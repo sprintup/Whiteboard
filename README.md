@@ -1,5 +1,5 @@
 ##Update log
-*The terminal command cucumberjs now opens and directs the browser to start testing.  
+* The terminal command cucumberjs now opens and directs the browser to start testing.  
 
 ### Overview
 An automated code test that logs into a website, finds elements and tests caluculated values. 
