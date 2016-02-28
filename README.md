@@ -1,5 +1,6 @@
 ##Update log
-* The terminal command cucumberjs now opens and directs the browser to start testing.  
+* The terminal command cucumberjs now opens and directs the browser to start testing. It will enter the username and password when the cucumber step doesn't time out before the site is retrieved. 
+* Currently working on a timout issue related to how cucumber handles asynchronous steps. Mocha might be a better option.
 
 ### Overview
 An automated code test that logs into a website, finds elements and tests caluculated values. 

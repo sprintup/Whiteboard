@@ -3,11 +3,8 @@ module.exports = function () {
   this.World = require('../support/world').World;
 
 	this.Given(/^The browser opens to the login page$/, function (callback) {
-		// console.log(this.driver);
-		// this.driver = this.buildChromeDriver;	
     this.driver.get('http://home.trainingpeaks.com/login');
 
-    // this.logIn('','');
 	  /*
 	  This code opens the page
   	browser.get('http://home.trainingpeaks.com/login');
@@ -15,28 +12,19 @@ module.exports = function () {
 	  callback().pending();
 	});
 
-	this.When(/^User enters username$/, function (callback) {
+	this.When(/^User enters username and password$/, function (callback) {
 	  // Write code here that turns the phrase above into concrete actions
-	browser.findElement(webdriver.By.id('Username')).sendKeys(username);	  /*
-	  This code logs enters a username
-		browser.findElement(webdriver.By.id('Username')).sendKeys(username);
-	  */
-	  callback.pending();
-	});
+		this.driver.findElement({id:'Username'})
+			.sendKeys('username');
+		this.driver.findElement({id:'Password'})
+			.sendKeys('password');
 
-	this.When(/^User enters password$/, function (callback) {
-	  // Write code here that turns the phrase above into concrete actions
-
-	  /*
-	  This code enters a password
-		browser.findElement(webdriver.By.id('Password')).sendKeys(password);
-	  */
 	  callback.pending();
 	});
 
 	this.When(/^User clicks login button$/, function (callback) {
 	  // Write code here that turns the phrase above into concrete actions
-
+		this.driver.findElement({id:'btnSubmit'}).click();	
 	  /*
 	  This code clicks button
 		browser.findElement(webdriver.By.id('btnSubmit')).click();
