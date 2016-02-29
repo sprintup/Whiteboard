@@ -1,46 +1,55 @@
 /*
--Enter variables in the spec/model.js file
--Assertion docs: https://nodejs.org/api/assert.html
+Assertion docs: https://nodejs.org/api/assert.html
 */
-
 var assert = require('assert');
 var browserActions = require(process.cwd() + '/spec/model');
 
 module.exports = function () {
 
-	var myActions = browserActions.create();; 
+	/*
+	Enter variables in the spec/model.js file
+	*/
+	var myActions = browserActions.create(); 
 
   this.World = require('../support/world').World;
 
 	this.Given(/^The browser opens to the login page$/, function (callback) {
     this.driver.get(myActions.url());
 		this.driver.getCurrentUrl().then(function (browserUrl) {
-			assert.equal(browserUrl,myActions.url(),'expected site and actual site don\'t match');
+			assert.equal(browserUrl,myActions.url(),'expected <'+browserUrl+'> was <'+myActions.url()+'>');
 		});
 	  /*
 	  This code opens the page
   	browser.get('http://home.trainingpeaks.com/login');
 	  */
-
 	  callback().pending();
 	});
 
-	this.When(/^User enters username and password$/, function (callback) {
+	this.When(/^User enters username$/, function (callback) {
 	  // Write code here that turns the phrase above into concrete actions
 		this.driver.findElement({id:'Username'})
 			.sendKeys(myActions.username());
+
+		// Assertion
+		this.driver.findElement({id:'Username'})
+			.getAttribute("value")
+			.then(function (element) {
+				console.log('expected: '+myActions.username()+' actual: '+ element);
+				assert.equal(element,myActions.username(),'actual <'+element+'> expected <'+myActions.username()+'>');
+			  callback();
+			});
+	});
+
+	this.When(/^User enters password$/, function (callback) {
+	  // Write code here that turns the phrase above into concrete actions
 		this.driver.findElement({id:'Password'})
-			.sendKeys(myActions.password());
+		.sendKeys(myActions.password());
 	  callback.pending();
 	});
 
 	this.When(/^User clicks login button$/, function (callback) {
 	  // Write code here that turns the phrase above into concrete actions
-		this.driver.findElement({id:'btnSubmit'}).click();	
-	  /*
-	  This code clicks button
-		browser.findElement(webdriver.By.id('btnSubmit')).click();
-	  */
+
 	  callback.pending();
 	});
 

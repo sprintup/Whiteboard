@@ -1,5 +1,4 @@
 /*
-
 Cucumberjs configuration file
 
 find more information here:
