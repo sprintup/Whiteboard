@@ -1,6 +1,7 @@
 ##Update log
-* The terminal command cucumberjs now opens and directs the browser to start testing. It will enter the username and password and log in.
-* Working on integrating an assertion library for tests. 
+* The terminal command cucumberjs now opens and directs the browser to start testing. It will enter the username and password and log in. 
+* Working on integrating an assertion library for tests. It currently supports the limited but functional [Node assertion libarary](https://nodejs.org/api/assert.html). Exposing the window and document objects in the step definitions can be problematic, here is an [article](https://www.custardbelly.com/blog/blog-posts/2014/02/10/cucumberjs-tests-browser/index.html). I'm exploring options. 
+* Might consider using [Nightwatch](http://nightwatchjs.org/) for js/selenium testing instead of cucumberjs. 
 
 ### Overview
 An automated code test that logs into a website, finds elements and tests caluculated values. 

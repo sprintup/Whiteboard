@@ -1,5 +1,6 @@
 /*
-Enter variables in the spec/model.js file
+-Enter variables in the spec/model.js file
+-Assertion docs: https://nodejs.org/api/assert.html
 */
 
 var assert = require('assert');
@@ -13,6 +14,10 @@ module.exports = function () {
 
 	this.Given(/^The browser opens to the login page$/, function (callback) {
     this.driver.get(myActions.url());
+    // assert.equal(1,2,'test assert');
+    // console.log(this.driver);
+    // assert.equal
+    // console.log(document);
 	  /*
 	  This code opens the page
   	browser.get('http://home.trainingpeaks.com/login');
@@ -26,7 +31,7 @@ module.exports = function () {
 			.sendKeys(myActions.username());
 		this.driver.findElement({id:'Password'})
 			.sendKeys(myActions.password());
-	  callback();
+	  callback.pending();
 	});
 
 	this.When(/^User clicks login button$/, function (callback) {
@@ -36,7 +41,7 @@ module.exports = function () {
 	  This code clicks button
 		browser.findElement(webdriver.By.id('btnSubmit')).click();
 	  */
-	  callback();
+	  callback.pending();
 	});
 
 	this.Then(/^Web app should load after a period of time$/, function (callback) {
