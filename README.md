@@ -22,7 +22,7 @@ You can run 'cucumberjs' in the terminal after installing the packages (npm inst
 
 #### Automation
 * To see it log in and run after the page loads run 'node driver.js' from inside the webDriver folder. 
-* You might have to include the latest chrome web driver binary in your path for it to automate. It's available [here](http://chromedriver.storage.googleapis.com/index.html);
+* You might have to include the latest chrome web driver binary in your path for it to automate. It's available [here](http://chromedriver.storage.googleapis.com/index.html).
 * You have to replace the passwords in driver.js in webDriver
 
 #### Future Upgrades:

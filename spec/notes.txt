@@ -1,3 +1,0 @@
-This folder is for unit tests for the classes in the domain model 
-
-run rspec --format doc to run all tests
