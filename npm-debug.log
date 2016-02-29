@@ -1,0 +1,662 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'webdriver-helper' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.3
+4 verbose install initial load of /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/package.json
+5 warn package.json codetest@1.0.0 No repository field.
+6 verbose installManyTop reading scoped package data from /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/cucumber/package.json
+7 verbose installManyTop reading scoped package data from /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/selenium-webdriver/package.json
+8 verbose installManyTop reading scoped package data from /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/zombie/package.json
+9 verbose readDependencies loading dependencies from /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/package.json
+10 silly cache add args [ 'webdriver-helper', null ]
+11 verbose cache add spec webdriver-helper
+12 silly cache add parsed spec Result {
+12 silly cache add   raw: 'webdriver-helper',
+12 silly cache add   scope: null,
+12 silly cache add   name: 'webdriver-helper',
+12 silly cache add   rawSpec: '',
+12 silly cache add   spec: '*',
+12 silly cache add   type: 'range' }
+13 silly addNamed webdriver-helper@*
+14 verbose addNamed "*" is a valid semver range for webdriver-helper
+15 silly addNameRange { name: 'webdriver-helper', range: '*', hasData: false }
+16 silly mapToRegistry name webdriver-helper
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry uri https://registry.npmjs.org/webdriver-helper
+20 verbose addNameRange registry:https://registry.npmjs.org/webdriver-helper not in flight; fetching
+21 verbose request uri https://registry.npmjs.org/webdriver-helper
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 2:30:36 PM
+24 verbose request id 92e901af6ab9a13e
+25 http request GET https://registry.npmjs.org/webdriver-helper
+26 http 200 https://registry.npmjs.org/webdriver-helper
+27 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 verbose headers   etag: '"32A4X43K3J8HPQCLO01HKLYB7"',
+27 verbose headers   'content-type': 'application/json',
+27 verbose headers   'cache-control': 'max-age=300',
+27 verbose headers   'content-length': '38824',
+27 verbose headers   'accept-ranges': 'bytes',
+27 verbose headers   date: 'Mon, 29 Feb 2016 21:30:37 GMT',
+27 verbose headers   via: '1.1 varnish',
+27 verbose headers   age: '0',
+27 verbose headers   connection: 'keep-alive',
+27 verbose headers   'x-served-by': 'cache-ord1727-ORD',
+27 verbose headers   'x-cache': 'MISS',
+27 verbose headers   'x-cache-hits': '0',
+27 verbose headers   'x-timer': 'S1456781437.507345,VS0,VE319',
+27 verbose headers   vary: 'Accept' }
+28 silly get cb [ 200,
+28 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 silly get     etag: '"32A4X43K3J8HPQCLO01HKLYB7"',
+28 silly get     'content-type': 'application/json',
+28 silly get     'cache-control': 'max-age=300',
+28 silly get     'content-length': '38824',
+28 silly get     'accept-ranges': 'bytes',
+28 silly get     date: 'Mon, 29 Feb 2016 21:30:37 GMT',
+28 silly get     via: '1.1 varnish',
+28 silly get     age: '0',
+28 silly get     connection: 'keep-alive',
+28 silly get     'x-served-by': 'cache-ord1727-ORD',
+28 silly get     'x-cache': 'MISS',
+28 silly get     'x-cache-hits': '0',
+28 silly get     'x-timer': 'S1456781437.507345,VS0,VE319',
+28 silly get     vary: 'Accept' } ]
+29 verbose get saving webdriver-helper to /Users/stephenprintup/.npm/registry.npmjs.org/webdriver-helper/.cache.json
+30 silly addNameRange number 2 { name: 'webdriver-helper', range: '*', hasData: true }
+31 silly addNameRange versions [ 'webdriver-helper', [ '0.1.0', '0.2.0', '0.2.1' ] ]
+32 silly addNamed webdriver-helper@0.2.1
+33 verbose addNamed "0.2.1" is a plain semver version for webdriver-helper
+34 silly mapToRegistry name webdriver-helper
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry uri https://registry.npmjs.org/webdriver-helper
+38 verbose addRemoteTarball https://registry.npmjs.org/webdriver-helper/-/webdriver-helper-0.2.1.tgz not in flight; adding
+39 verbose addRemoteTarball [ 'https://registry.npmjs.org/webdriver-helper/-/webdriver-helper-0.2.1.tgz',
+39 verbose addRemoteTarball   '553a1cda0f31d165a576c1603a1ff424ac122f1b' ]
+40 info retry fetch attempt 1 at 2:30:38 PM
+41 info attempt registry request try #1 at 2:30:38 PM
+42 http fetch GET https://registry.npmjs.org/webdriver-helper/-/webdriver-helper-0.2.1.tgz
+43 http fetch 200 https://registry.npmjs.org/webdriver-helper/-/webdriver-helper-0.2.1.tgz
+44 silly fetchAndShaCheck shasum 553a1cda0f31d165a576c1603a1ff424ac122f1b
+45 verbose addTmpTarball /var/folders/lx/bqjnpcb94gl534vtfxq3s3640000gn/T/npm-22962-32262d7b/registry.npmjs.org/webdriver-helper/-/webdriver-helper-0.2.1.tgz not in flight; adding
+46 verbose addTmpTarball already have metadata; skipping unpack for webdriver-helper@0.2.1
+47 silly cache afterAdd webdriver-helper@0.2.1
+48 verbose afterAdd /Users/stephenprintup/.npm/webdriver-helper/0.2.1/package/package.json not in flight; writing
+49 verbose afterAdd /Users/stephenprintup/.npm/webdriver-helper/0.2.1/package/package.json written
+50 silly install resolved [ { name: 'webdriver-helper',
+50 silly install resolved     description: 'JavaScript WebDriver Helper offer the friendly apis while using selenium-webdriver.',
+50 silly install resolved     version: '0.2.1',
+50 silly install resolved     homepage: 'https://github.com/winsonwq/webdriver-helper',
+50 silly install resolved     author:
+50 silly install resolved      { name: 'Wang Qiu',
+50 silly install resolved        email: 'winsonwq@gmail.com',
+50 silly install resolved        url: 'http://ishouldbeageek.me' },
+50 silly install resolved     repository:
+50 silly install resolved      { type: 'git',
+50 silly install resolved        url: 'git@github.com:winsonwq/webdriver-helper.git' },
+50 silly install resolved     bugs: { url: 'https://github.com/winsonwq/webdriver-helper/issues' },
+50 silly install resolved     licenses: [ [Object] ],
+50 silly install resolved     main: 'lib/webdriver-helper',
+50 silly install resolved     engines: { node: '>= 0.8.0' },
+50 silly install resolved     scripts:
+50 silly install resolved      { build: 'cake build',
+50 silly install resolved        install: 'npm run build',
+50 silly install resolved        test: 'npm install && grunt test' },
+50 silly install resolved     dependencies:
+50 silly install resolved      { 'selenium-webdriver': '>=2.33.0',
+50 silly install resolved        underscore: '*',
+50 silly install resolved        'Mr.Async': '~0.3.1' },
+50 silly install resolved     devDependencies:
+50 silly install resolved      { 'grunt-contrib-watch': '~0.2.0',
+50 silly install resolved        'grunt-contrib-coffee': '~0.7.0',
+50 silly install resolved        'grunt-mocha-cli': '~1.3.0',
+50 silly install resolved        'grunt-contrib-connect': '~0.5.0',
+50 silly install resolved        chai: '*',
+50 silly install resolved        grunt: '~0.4.1' },
+50 silly install resolved     keywords: [ 'testing', 'webdriver', 'selenium', 'javascript' ],
+50 silly install resolved     readme: '# webdriver-helper\n\nThis helper library offer lots of friendly api while using JavaScript WebDriver\n\n## Getting Started\nInstall the module with: `npm install webdriver-helper` to enable the friendly APIs.\n\n## Documentation\n\nYou could setup the selenium webdriver like this. Remember to require \'webdriver-helper\' to enable friendly apis.\n\n```js\nvar webdriver = require(\'selenium-webdriver\');\nrequire(\'chai\').should();\n// enable the friendly apis by requiring \'webdriver-helper\'\nrequire(\'webdriver-helper\'); \n\nvar builder = new webdriver.Builder().\n  usingServer(\'http://localhost:4444/wd/hub\').\n  withCapabilities({\n    browserName: \'firefox\' \n  });\nvar browser = builder.build();\nbrowser.get(\'http://localhost:9001\');\n```\n### Browser API\n\n#### browser.navigateTo(path)\nGo to the path which is relative to current path.\n\n```js\nbrowser.navigateTo(\'/demo.html?a=1&b=2#c=1\');\nbrowser.currentUrl(function(currUrl, url) {\n  currUrl.should.equal(\'http://localhost:9001/demo.html?a=1&b=2#c=1\')\n});\n```\n\n#### browser.currentUrl(currHandler)\nGet current url.\n\n```js\nbrowser.navigateTo(\'/demo.html?a=1&b=2#c=1\');\nbrowser.currentUrl(function(currUrl, url) {\n  currUrl.should.equal(\'http://localhost:9001/demo.html?a=1&b=2#c=1\');\n  url.protocol.should.equal(\'http:\');\n  url.slashes.should.equal(true);\n  url.host.should.equal(\'localhost:9001\');\n  url.port.should.equal(\'9001\');\n  url.hostname.should.equal(\'localhost\');\n  url.href.should.equal(\'http://localhost:9001/demo.html?a=1&b=2#c=1\');\n  url.hash.should.equal(\'#c=1\');\n  url.search.should.equal(\'?a=1&b=2\');\n  url.query.should.equal(\'a=1&b=2\');\n  url.pathname.should.equal(\'/demo.html\');\n  url.path.should.equal(\'/demo.html?a=1&b=2\');\n});\n```\n#### browser.refresh()\nRefresh current page.\n\n#### browser.forward()\nGo forward to next page in history.\n\n#### browser.back()\nGo back to privious page in history.\n\n#### browser.title(titleHandler)\nGet title in current page.\n\n```js\nbrowser.title(function (title) {\n  title.should.equal(\'your title\');\n});\n```\n\n### Window API\n\n#### browser.window()\nGet current window.\n\n#### browser.window().position(positionHandler)\nGet current window\'s position.\n```js\nbrowser.window().position(function (x, y) {\n  x.should.equal(0);\n  y.should.equal(0);\n});\n```\n\n#### browser.window().position(x, y)\nSet current window\'s position to (x, y) relative to screen.\n```js\nbrowser.window().position(100, 100);\n```\n\n#### browser.window().size(sizeHandler)\nGet current window\'s size.\n```js\nbrowser.window().size(function (width, height) {\n  width.should.equal(500);\n  height.should.equal(500);\n});\n```\n\n#### browser.window().size(width, height)\nSet current window\'s size with `width` and `height`.\n\n```js\nbrowser.window().size(500, 500)\n```\n\n#### browser.window().maximize()\nMaximize the current window to full screen.\n\n### Elements API\n\n#### browser.elements(selector)\nGet all matched element by selector. every element could use the friendly api listed below.\n\n#### browser.elements(selector).count(coundHandler)\nGet count of all matched elements.\n\n```js\nbrowser.elements(\'input\').count(function (count) {\n  count.should.equal(6);\n});\n```\n\n#### browser.elements(selector).get(index, elemHandler)\nGet the element in matched elements according to index.\n\n```js\nbrowser.elements(\'input\').get(0, function (elem) {\n  elem.enter(\'hello world!\');\n  // elem.click();\n});\n```\n\n#### browser.elements(selector).initialized\nGet the status that all elements is initialized or not.\n\n#### browser.elements(selector).init(initedHandler)\nInitialize all elements and save inside. In initedHandler, `initialized` property will be updated to `true`. And you could change asyn-invoking to sync-invoking. For example,\n\n```js\nbrowser.elements(\'input\').init(function (elems) {\n  this.initialized.should.be.true;\n  this.count().should.equal(6);\n  this.get(0).enter(\'hello world\');\n  this.get(1).attr(\'name\').should.equal(\'textbox\');\n  /\\* ... \\*/\n});\n```\n\n#### browser.element(selector)\nGet first matched element by selector.\n\n#### browser.element(selector).click()\nClick the element, the `click` method is also used for `browser.input()`, `browser.dropdownlist()` and `browser.link()` element.\n\n#### browser.element(selector).value(valueHandler)\nGet value for the the matched element\'s value attribute. It could used in `browser.input(selector).value()` as well.\n\n```js\nbrowser.element(\'input#name\').value(function (val) {\n  val.should.equal(\'your name\');\n});\n```\n\n#### browser.element(selector).attr(attrName, attrHandler)\nGet value of the matched element\'s attrubute with attribute name `attrName`.\n\n```js\nbrowser.element(\'input[name="textbox"]\').attr(\'name\', function (attr) {\n  attr.should.equal(\'textbox\');\n});\n```\n\n#### browser.element(selector).css(propertyName, valueHandler)\nGet css value of the matched element\'s css property with name `propertyName`.\n\n```js\nbrowser.element(\'input[name="textbox"]\').css(\'font-family\', function (property) {\n  property.should.equal(\'Georgia\');\n});\n```\n\n#### browser.element(selector).text(textHandler)\nGet the innerText of the matched element.\n\n```js\nbrowser.element(\'body\').text(function (text) {\n  text.should.contain(\'hello world!\');\n});\n```\n\n#### browser.element(selector).html(htmlHandler)\nGet the innerHTML of the matched element.\n\n```js\nbrowser.element(\'body\').html(function (html) {\n  html.should.contain(\'<p>hello world!</p>\');\n});\n```\n\n#### browser.element(selector).isEnabled(enabledHandler)\nGet value for the matched element\'s status.\n\n```js\nbrowser.element(\'input#btn\').isEnabled(function (enabledStatus) {\n  enabledStatus.should.be.false;\n});\n```\n\n#### browser.element(selector).isDisplayed(displayedHandler)\nGet value for visibility of element.\n\n```js\nbrowser.element(\'#displayed\').isDisplayed(function (displayed) {\n  displayed.should.be.false;\n});\n```\n\n#### browser.input(selector)\nGet first matched `input` element by selector, it includes textbox, checkbox, radio etc...\n\n#### browser.input(selector).enter(text)\nEnter text into matched textbox.\n\n#### browser.input(selector).value(valueHandler)\nGet value of matched textbox\n\n#### browser.input(selector).check()\nCheck matched checkbox.\n\n#### browser.input(selector).uncheck()\nUncheck matched checkbox.\n\n#### browser.input(selector).isChecked(checkedHandler)\nGet the checked status.\n\n```js\nbrowser.input(\'input#checkbox\').isChecked(function (checked) {\n  checked.should.be.true;\n})\n```\n\n#### browser.input(selector).select()\nSelect matched radio button.\n\n#### browser.input(selector).isSeleced(selectedHandler)\nGet the selected status. Same as `isChecked`.\n\n#### browser.dropdownlist(selector)\nGet first matched `select` element by selector.\n\n#### browser.dropdownlist(selector).option(val1/\\*, val2 ... \\*/)\nSelect these options with the valus in arguments. If the dropdownlist couldn\'t be multi-selected, the option with the last value would be selected.\n\n#### browser.dropdownlist(selector).value(valueHandler)\nGet the value for matched dropdownlist.\n\n#### browser.dropdownlist(selector).values(valuesHandler)\nFor the multi-selected dropdownlist, it will return array of values.\n\n```js\nbrowser.dropdownlist(selector).values(function (values) {\n  values.should.eql([2, 3]);\n});\n```\n\n#### browser.link(selector)\nUse css selector to find the matched link\n\n#### browser.link(partialLinkText)\n*ONLY FOR LINK* \n\n```js\nbrowser.link(\':contains("Partial Link Text")\').click()\n```\n\n#### browser.exec(script, args, callback)\n\n```js\nbrowser.exec(\'alert("hello world!");\', function() {\n  browser.dialog().text(function (text) {\n    text.should.equal(\'hello world!\');\n  });\n});\n```\n\nUse args\n```js\nbrowser.exec(\'alert(arguments[0][0]);\', [\'hello!\'], function() {\n  browser.dialog().text(function (text) {\n    text.should.equal(\'hello!\');\n  });\n});\n```\n\nUse elements\n```js\nbrowser.exec(\'alert(arguments[0][0].name);\', browser.elements(\'input[type="checkbox"]\');\nbrowser.dialog().text(function (text) {\n  text.should.equal(\'checkbox\');\n});\n```\n\n#### browser.execAsync(script, args, callback)\n\n```js\nbrowser.manage().timeouts().setScriptTimeout(5000);\nbrowser.execAsync(\'var callback = arguments[arguments.length - 1];setTimeout(function(){ callback(10); }, 500);\', function(num) {\n  num.should.equal(10);\n});\n```\n\nUse args\n```js\nbrowser.manage().timeouts().setScriptTimeout(5000);\nbrowser.execAsync(\'var callback = arguments[arguments.length - 1];var str = arguments[0][0]; setTimeout(function(){ callback(str); }, 500);\', [\'hello world\'], function(str) {\n  str.should.equal(\'hello world\');\n});\n```\n\nUse elements\n```js\nbrowser.manage().timeouts().setScriptTimeout(5000);\nbrowser.execAsync(\'var callback = arguments[arguments.length - 1];var elem = arguments[0][0]; setTimeout(function(){ callback(elem); }, 500);\', browser.elements(\'input[type="checkbox"]\'), function(element) {\n  element.attr(\'name\', function(name) {\n    name.should.equal(\'checkbox\');\n  });\n});\n```\n\n### Alert API\n\n#### browser.dialog()\nGet the dialog which could be alert, confirm, prompt dialog.\n\n#### browser.dialog().text(textHandler)\nGet the text on the dialog.\n\n#### browser.dialog().accept(thenHandler)\nAccept(Ok) the confirm and prompt dialog.\n\n#### browser.dialog().dismiss(thenHandler)\nDismiss(Cancel) the alert, confirm and prompt dialog.\n\n#### browser.dialog().enter(text, thenHandler)\nEnter text in prompt dialog.\n\n## Contributing\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).\n\n## Release History\n\n**0.2.1** 2013-10-20 Add `exec` and `execAsync` JavaScript support \n\n**0.2.0** 2013-10-20 Add dialog behaviors\n\n**0.1.0** 2013-10-17 MVP\n\n## License\nCopyright (c) 2013 Wang Qiu  \nLicensed under the MIT license.\n',
+50 silly install resolved     readmeFilename: 'README.md',
+50 silly install resolved     _id: 'webdriver-helper@0.2.1',
+50 silly install resolved     dist:
+50 silly install resolved      { shasum: '553a1cda0f31d165a576c1603a1ff424ac122f1b',
+50 silly install resolved        tarball: 'http://registry.npmjs.org/webdriver-helper/-/webdriver-helper-0.2.1.tgz' },
+50 silly install resolved     _from: 'webdriver-helper@*',
+50 silly install resolved     _npmVersion: '1.3.11',
+50 silly install resolved     _npmUser: { name: 'winsonwq', email: 'winsonwq@gmail.com' },
+50 silly install resolved     maintainers: [ [Object] ],
+50 silly install resolved     directories: {},
+50 silly install resolved     _shasum: '553a1cda0f31d165a576c1603a1ff424ac122f1b',
+50 silly install resolved     _resolved: 'https://registry.npmjs.org/webdriver-helper/-/webdriver-helper-0.2.1.tgz' } ]
+51 info install webdriver-helper@0.2.1 into /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests
+52 info installOne webdriver-helper@0.2.1
+53 verbose installOne of webdriver-helper to /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests not in flight; installing
+54 verbose lock using /Users/stephenprintup/.npm/_locks/webdriver-helper-ce44be79add9d60e.lock for /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper
+55 silly install write writing webdriver-helper 0.2.1 to /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper
+56 verbose unbuild node_modules/webdriver-helper
+57 silly gentlyRm /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper is being purged from base /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests
+58 verbose gentlyRm don't care about contents; nuking /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper
+59 verbose tar unpack /Users/stephenprintup/.npm/webdriver-helper/0.2.1/package.tgz
+60 verbose tar unpacking to /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper
+61 silly gentlyRm /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper is being purged
+62 verbose gentlyRm don't care about contents; nuking /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper
+63 silly gunzTarPerm modes [ '755', '644' ]
+64 silly gunzTarPerm extractEntry package.json
+65 silly gunzTarPerm extractEntry .npmignore
+66 silly gunzTarPerm extractEntry README.md
+67 silly gunzTarPerm extractEntry Gruntfile.js
+68 silly gunzTarPerm extractEntry Cakefile
+69 silly gunzTarPerm extractEntry LICENSE-MIT
+70 silly gunzTarPerm extractEntry source/webdriver-helper.coffee
+71 silly gunzTarPerm extractEntry test/demo.html
+72 silly gunzTarPerm extractEntry test/index.html
+73 silly gunzTarPerm extractEntry test/src/webdriver-alert-helper_test.coffee
+74 silly gunzTarPerm extractEntry test/src/webdriver-browser-helper_test.coffee
+75 silly gunzTarPerm extractEntry test/src/webdriver-builder.coffee
+76 silly gunzTarPerm extractEntry test/src/webdriver-helper_test.coffee
+77 silly gunzTarPerm extractEntry test/src/webdriver-window-helper_test.coffee
+78 verbose write writing to /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/package.json
+79 info preinstall webdriver-helper@0.2.1
+80 verbose readDependencies loading dependencies from /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/package.json
+81 silly prepareForInstallMany adding underscore@* from webdriver-helper dependencies
+82 silly prepareForInstallMany adding Mr.Async@~0.3.1 from webdriver-helper dependencies
+83 verbose readDependencies loading dependencies from /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/package.json
+84 silly cache add args [ 'underscore@*', null ]
+85 verbose cache add spec underscore@*
+86 silly cache add args [ 'Mr.Async@~0.3.1', null ]
+87 verbose cache add spec Mr.Async@~0.3.1
+88 silly cache add parsed spec Result {
+88 silly cache add   raw: 'underscore@*',
+88 silly cache add   scope: null,
+88 silly cache add   name: 'underscore',
+88 silly cache add   rawSpec: '*',
+88 silly cache add   spec: '*',
+88 silly cache add   type: 'range' }
+89 silly addNamed underscore@*
+90 verbose addNamed "*" is a valid semver range for underscore
+91 silly addNameRange { name: 'underscore', range: '*', hasData: false }
+92 silly mapToRegistry name underscore
+93 silly mapToRegistry using default registry
+94 silly mapToRegistry registry https://registry.npmjs.org/
+95 silly mapToRegistry uri https://registry.npmjs.org/underscore
+96 verbose addNameRange registry:https://registry.npmjs.org/underscore not in flight; fetching
+97 silly cache add parsed spec Result {
+97 silly cache add   raw: 'Mr.Async@~0.3.1',
+97 silly cache add   scope: null,
+97 silly cache add   name: 'Mr.Async',
+97 silly cache add   rawSpec: '~0.3.1',
+97 silly cache add   spec: '>=0.3.1 <0.4.0',
+97 silly cache add   type: 'range' }
+98 silly addNamed Mr.Async@>=0.3.1 <0.4.0
+99 verbose addNamed ">=0.3.1 <0.4.0" is a valid semver range for Mr.Async
+100 silly addNameRange { name: 'Mr.Async', range: '>=0.3.1 <0.4.0', hasData: false }
+101 silly mapToRegistry name Mr.Async
+102 silly mapToRegistry using default registry
+103 silly mapToRegistry registry https://registry.npmjs.org/
+104 silly mapToRegistry uri https://registry.npmjs.org/Mr.Async
+105 verbose addNameRange registry:https://registry.npmjs.org/Mr.Async not in flight; fetching
+106 verbose request uri https://registry.npmjs.org/Mr.Async
+107 verbose request no auth needed
+108 info attempt registry request try #1 at 2:30:39 PM
+109 http request GET https://registry.npmjs.org/Mr.Async
+110 verbose request uri https://registry.npmjs.org/underscore
+111 verbose request no auth needed
+112 info attempt registry request try #1 at 2:30:39 PM
+113 verbose etag "EFYS9G68FCSBB8P69WUIM6YME"
+114 http request GET https://registry.npmjs.org/underscore
+115 http 304 https://registry.npmjs.org/underscore
+116 verbose headers { date: 'Mon, 29 Feb 2016 21:30:40 GMT',
+116 verbose headers   via: '1.1 varnish',
+116 verbose headers   'cache-control': 'max-age=300',
+116 verbose headers   etag: '"EFYS9G68FCSBB8P69WUIM6YME"',
+116 verbose headers   age: '30',
+116 verbose headers   connection: 'keep-alive',
+116 verbose headers   'x-served-by': 'cache-ord1735-ORD',
+116 verbose headers   'x-cache': 'HIT',
+116 verbose headers   'x-cache-hits': '1',
+116 verbose headers   'x-timer': 'S1456781440.455175,VS0,VE0',
+116 verbose headers   vary: 'Accept' }
+117 silly get cb [ 304,
+117 silly get   { date: 'Mon, 29 Feb 2016 21:30:40 GMT',
+117 silly get     via: '1.1 varnish',
+117 silly get     'cache-control': 'max-age=300',
+117 silly get     etag: '"EFYS9G68FCSBB8P69WUIM6YME"',
+117 silly get     age: '30',
+117 silly get     connection: 'keep-alive',
+117 silly get     'x-served-by': 'cache-ord1735-ORD',
+117 silly get     'x-cache': 'HIT',
+117 silly get     'x-cache-hits': '1',
+117 silly get     'x-timer': 'S1456781440.455175,VS0,VE0',
+117 silly get     vary: 'Accept' } ]
+118 verbose etag https://registry.npmjs.org/underscore from cache
+119 verbose get saving underscore to /Users/stephenprintup/.npm/registry.npmjs.org/underscore/.cache.json
+120 silly addNameRange number 2 { name: 'underscore', range: '*', hasData: true }
+121 silly addNameRange versions [ 'underscore',
+121 silly addNameRange   [ '1.0.3',
+121 silly addNameRange     '1.0.4',
+121 silly addNameRange     '1.1.0',
+121 silly addNameRange     '1.1.1',
+121 silly addNameRange     '1.1.2',
+121 silly addNameRange     '1.1.3',
+121 silly addNameRange     '1.1.4',
+121 silly addNameRange     '1.1.5',
+121 silly addNameRange     '1.1.6',
+121 silly addNameRange     '1.1.7',
+121 silly addNameRange     '1.2.0',
+121 silly addNameRange     '1.2.1',
+121 silly addNameRange     '1.2.2',
+121 silly addNameRange     '1.2.3',
+121 silly addNameRange     '1.2.4',
+121 silly addNameRange     '1.3.0',
+121 silly addNameRange     '1.3.1',
+121 silly addNameRange     '1.3.2',
+121 silly addNameRange     '1.3.3',
+121 silly addNameRange     '1.4.0',
+121 silly addNameRange     '1.4.1',
+121 silly addNameRange     '1.4.2',
+121 silly addNameRange     '1.4.3',
+121 silly addNameRange     '1.4.4',
+121 silly addNameRange     '1.5.0',
+121 silly addNameRange     '1.5.1',
+121 silly addNameRange     '1.5.2',
+121 silly addNameRange     '1.6.0',
+121 silly addNameRange     '1.7.0',
+121 silly addNameRange     '1.8.0',
+121 silly addNameRange     '1.8.1',
+121 silly addNameRange     '1.8.2',
+121 silly addNameRange     '1.8.3' ] ]
+122 silly addNamed underscore@1.8.3
+123 verbose addNamed "1.8.3" is a plain semver version for underscore
+124 silly cache afterAdd underscore@1.8.3
+125 verbose afterAdd /Users/stephenprintup/.npm/underscore/1.8.3/package/package.json not in flight; writing
+126 verbose afterAdd /Users/stephenprintup/.npm/underscore/1.8.3/package/package.json written
+127 http 200 https://registry.npmjs.org/Mr.Async
+128 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+128 verbose headers   etag: '"7PZJ5WZ48N273KQPCQBB5ECH"',
+128 verbose headers   'content-type': 'application/json',
+128 verbose headers   'cache-control': 'max-age=300',
+128 verbose headers   'content-length': '10440',
+128 verbose headers   'accept-ranges': 'bytes',
+128 verbose headers   date: 'Mon, 29 Feb 2016 21:30:41 GMT',
+128 verbose headers   via: '1.1 varnish',
+128 verbose headers   age: '0',
+128 verbose headers   connection: 'keep-alive',
+128 verbose headers   'x-served-by': 'cache-ord1724-ORD',
+128 verbose headers   'x-cache': 'MISS',
+128 verbose headers   'x-cache-hits': '0',
+128 verbose headers   'x-timer': 'S1456781441.856671,VS0,VE44',
+128 verbose headers   vary: 'Accept' }
+129 silly get cb [ 200,
+129 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+129 silly get     etag: '"7PZJ5WZ48N273KQPCQBB5ECH"',
+129 silly get     'content-type': 'application/json',
+129 silly get     'cache-control': 'max-age=300',
+129 silly get     'content-length': '10440',
+129 silly get     'accept-ranges': 'bytes',
+129 silly get     date: 'Mon, 29 Feb 2016 21:30:41 GMT',
+129 silly get     via: '1.1 varnish',
+129 silly get     age: '0',
+129 silly get     connection: 'keep-alive',
+129 silly get     'x-served-by': 'cache-ord1724-ORD',
+129 silly get     'x-cache': 'MISS',
+129 silly get     'x-cache-hits': '0',
+129 silly get     'x-timer': 'S1456781441.856671,VS0,VE44',
+129 silly get     vary: 'Accept' } ]
+130 verbose get saving Mr.Async to /Users/stephenprintup/.npm/registry.npmjs.org/Mr.Async/.cache.json
+131 silly addNameRange number 2 { name: 'Mr.Async', range: '>=0.3.1 <0.4.0', hasData: true }
+132 silly addNameRange versions [ 'Mr.Async', [ '0.3.1' ] ]
+133 silly addNamed Mr.Async@0.3.1
+134 verbose addNamed "0.3.1" is a plain semver version for Mr.Async
+135 silly mapToRegistry name Mr.Async
+136 silly mapToRegistry using default registry
+137 silly mapToRegistry registry https://registry.npmjs.org/
+138 silly mapToRegistry uri https://registry.npmjs.org/Mr.Async
+139 verbose addRemoteTarball https://registry.npmjs.org/Mr.Async/-/Mr.Async-0.3.1.tgz not in flight; adding
+140 verbose addRemoteTarball [ 'https://registry.npmjs.org/Mr.Async/-/Mr.Async-0.3.1.tgz',
+140 verbose addRemoteTarball   '8a24c65e544b21b62d53f6eb81cfead7f654cd13' ]
+141 info retry fetch attempt 1 at 2:30:42 PM
+142 info attempt registry request try #1 at 2:30:42 PM
+143 http fetch GET https://registry.npmjs.org/Mr.Async/-/Mr.Async-0.3.1.tgz
+144 http fetch 200 https://registry.npmjs.org/Mr.Async/-/Mr.Async-0.3.1.tgz
+145 silly fetchAndShaCheck shasum 8a24c65e544b21b62d53f6eb81cfead7f654cd13
+146 verbose addTmpTarball /var/folders/lx/bqjnpcb94gl534vtfxq3s3640000gn/T/npm-22962-32262d7b/registry.npmjs.org/Mr.Async/-/Mr.Async-0.3.1.tgz not in flight; adding
+147 verbose addTmpTarball already have metadata; skipping unpack for Mr.Async@0.3.1
+148 silly cache afterAdd Mr.Async@0.3.1
+149 verbose afterAdd /Users/stephenprintup/.npm/Mr.Async/0.3.1/package/package.json not in flight; writing
+150 verbose afterAdd /Users/stephenprintup/.npm/Mr.Async/0.3.1/package/package.json written
+151 silly install resolved [ { name: 'underscore',
+151 silly install resolved     description: 'JavaScript\'s functional programming helper library.',
+151 silly install resolved     homepage: 'http://underscorejs.org',
+151 silly install resolved     keywords: [ 'util', 'functional', 'server', 'client', 'browser' ],
+151 silly install resolved     author: { name: 'Jeremy Ashkenas', email: 'jeremy@documentcloud.org' },
+151 silly install resolved     repository:
+151 silly install resolved      { type: 'git',
+151 silly install resolved        url: 'git://github.com/jashkenas/underscore.git' },
+151 silly install resolved     main: 'underscore.js',
+151 silly install resolved     version: '1.8.3',
+151 silly install resolved     devDependencies:
+151 silly install resolved      { docco: '*',
+151 silly install resolved        eslint: '0.6.x',
+151 silly install resolved        karma: '~0.12.31',
+151 silly install resolved        'karma-qunit': '~0.1.4',
+151 silly install resolved        'qunit-cli': '~0.2.0',
+151 silly install resolved        'uglify-js': '2.4.x' },
+151 silly install resolved     scripts:
+151 silly install resolved      { test: 'npm run test-node && npm run lint',
+151 silly install resolved        lint: 'eslint underscore.js test/*.js',
+151 silly install resolved        'test-node': 'qunit-cli test/*.js',
+151 silly install resolved        'test-browser': 'npm i karma-phantomjs-launcher && ./node_modules/karma/bin/karma start',
+151 silly install resolved        build: 'uglifyjs underscore.js -c "evaluate=false" --comments "/    .*/" -m --source-map underscore-min.map -o underscore-min.js',
+151 silly install resolved        doc: 'docco underscore.js' },
+151 silly install resolved     license: 'MIT',
+151 silly install resolved     files:
+151 silly install resolved      [ 'underscore.js',
+151 silly install resolved        'underscore-min.js',
+151 silly install resolved        'underscore-min.map',
+151 silly install resolved        'LICENSE' ],
+151 silly install resolved     gitHead: 'e4743ab712b8ab42ad4ccb48b155034d02394e4d',
+151 silly install resolved     bugs: { url: 'https://github.com/jashkenas/underscore/issues' },
+151 silly install resolved     _id: 'underscore@1.8.3',
+151 silly install resolved     _shasum: '4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022',
+151 silly install resolved     _from: 'underscore@*',
+151 silly install resolved     _npmVersion: '1.4.28',
+151 silly install resolved     _npmUser: { name: 'jashkenas', email: 'jashkenas@gmail.com' },
+151 silly install resolved     maintainers: [ [Object] ],
+151 silly install resolved     dist:
+151 silly install resolved      { shasum: '4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022',
+151 silly install resolved        tarball: 'http://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz' },
+151 silly install resolved     directories: {},
+151 silly install resolved     _resolved: 'https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz',
+151 silly install resolved     readme: 'ERROR: No README data found!' },
+151 silly install resolved   { author:
+151 silly install resolved      { name: 'Qiu Wang',
+151 silly install resolved        email: 'winsonwq@gmail.com',
+151 silly install resolved        url: 'http://sheldonw.sinaapp.com' },
+151 silly install resolved     name: 'Mr.Async',
+151 silly install resolved     description: 'A JavaScript Asynchronism Improvement Library',
+151 silly install resolved     version: '0.3.1',
+151 silly install resolved     homepage: 'https://github.com/winsonwq/Mr.Async',
+151 silly install resolved     repository: { type: 'git', url: 'git://github.com/winsonwq/Mr.Async.git' },
+151 silly install resolved     main: './lib/Mr.Async.js',
+151 silly install resolved     engines: { node: '*' },
+151 silly install resolved     dependencies: { amdefine: '>=0.0.1' },
+151 silly install resolved     devDependencies: {},
+151 silly install resolved     _npmUser: { name: 'winsonwq', email: 'winsonwq@gmail.com' },
+151 silly install resolved     _id: 'Mr.Async@0.3.1',
+151 silly install resolved     _engineSupported: true,
+151 silly install resolved     _npmVersion: '1.0.106',
+151 silly install resolved     _nodeVersion: 'v0.6.7',
+151 silly install resolved     _defaultsLoaded: true,
+151 silly install resolved     dist:
+151 silly install resolved      { shasum: '8a24c65e544b21b62d53f6eb81cfead7f654cd13',
+151 silly install resolved        tarball: 'http://registry.npmjs.org/Mr.Async/-/Mr.Async-0.3.1.tgz' },
+151 silly install resolved     maintainers: [ [Object] ],
+151 silly install resolved     directories: {},
+151 silly install resolved     _shasum: '8a24c65e544b21b62d53f6eb81cfead7f654cd13',
+151 silly install resolved     _resolved: 'https://registry.npmjs.org/Mr.Async/-/Mr.Async-0.3.1.tgz',
+151 silly install resolved     _from: 'Mr.Async@>=0.3.1 <0.4.0' } ]
+152 info install underscore@1.8.3 into /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper
+153 info install Mr.Async@0.3.1 into /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper
+154 info installOne underscore@1.8.3
+155 verbose installOne of underscore to /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper not in flight; installing
+156 info installOne Mr.Async@0.3.1
+157 verbose installOne of Mr.Async to /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper not in flight; installing
+158 verbose lock using /Users/stephenprintup/.npm/_locks/underscore-f69e748fc199e44a.lock for /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/underscore
+159 silly install write writing underscore 1.8.3 to /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/underscore
+160 verbose lock using /Users/stephenprintup/.npm/_locks/Mr-Async-f5a9246ce7eb2f49.lock for /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async
+161 silly install write writing Mr.Async 0.3.1 to /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async
+162 verbose unbuild node_modules/webdriver-helper/node_modules/underscore
+163 silly gentlyRm /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/underscore is being purged from base /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests
+164 verbose gentlyRm don't care about contents; nuking /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/underscore
+165 verbose tar unpack /Users/stephenprintup/.npm/underscore/1.8.3/package.tgz
+166 verbose tar unpacking to /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/underscore
+167 silly gentlyRm /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/underscore is being purged
+168 verbose gentlyRm don't care about contents; nuking /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/underscore
+169 verbose unbuild node_modules/webdriver-helper/node_modules/Mr.Async
+170 silly gunzTarPerm modes [ '755', '644' ]
+171 silly gentlyRm /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async is being purged from base /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests
+172 verbose gentlyRm don't care about contents; nuking /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async
+173 verbose tar unpack /Users/stephenprintup/.npm/Mr.Async/0.3.1/package.tgz
+174 verbose tar unpacking to /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async
+175 silly gentlyRm /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async is being purged
+176 verbose gentlyRm don't care about contents; nuking /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async
+177 silly gunzTarPerm modes [ '755', '644' ]
+178 silly gunzTarPerm extractEntry package.json
+179 silly gunzTarPerm extractEntry .gitignore
+180 silly gunzTarPerm extractEntry README.md
+181 silly gunzTarPerm extractEntry LICENSE
+182 silly gunzTarPerm extractEntry package.json
+183 silly gunzTarPerm extractEntry README.md
+184 silly gunzTarPerm extractEntry underscore.js
+185 silly gunzTarPerm extractEntry underscore-min.js
+186 silly gunzTarPerm extractEntry underscore-min.map
+187 silly gunzTarPerm extractEntry lib/Mr.Async.js
+188 silly gunzTarPerm extractEntry lib/extention/common.js
+189 silly gunzTarPerm extractEntry lib/extention/jquery-support.js
+190 silly gunzTarPerm extractEntry lib/extention/web.js
+191 silly gunzTarPerm extractEntry lib/Recoder/ExpressionVisitor.js
+192 silly gunzTarPerm extractEntry lib/Recoder/main.js
+193 silly gunzTarPerm extractEntry lib/Recoder/Mr.Async.Interpreter.js
+194 silly gunzTarPerm extractEntry lib/Recoder/Mr.Recoder.js
+195 silly gunzTarPerm extractEntry lib/Recoder/parser.js
+196 silly gunzTarPerm extractEntry test/require-js/index.html
+197 silly gunzTarPerm extractEntry test/require-js/main.js
+198 silly gunzTarPerm extractEntry test/require-js/test.js
+199 verbose write writing to /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/underscore/package.json
+200 silly gunzTarPerm extractEntry test/qunit/index.html
+201 silly gunzTarPerm extractEntry test/qunit/interpreter-test.html
+202 info preinstall underscore@1.8.3
+203 verbose readDependencies loading dependencies from /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/underscore/package.json
+204 silly gunzTarPerm extractEntry test/qunit/interpreter-test.js
+205 silly gunzTarPerm extractEntry test/qunit/test.js
+206 verbose readDependencies loading dependencies from /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/underscore/package.json
+207 silly install resolved []
+208 verbose about to build /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/underscore
+209 info build /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/underscore
+210 silly gunzTarPerm extractEntry test/qunit/resources/qunit.css
+211 silly gunzTarPerm extractEntry test/qunit/resources/qunit.js
+212 info linkStuff underscore@1.8.3
+213 silly linkStuff underscore@1.8.3 has /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules as its parent node_modules
+214 verbose linkBins underscore@1.8.3
+215 verbose linkMans underscore@1.8.3
+216 verbose rebuildBundles underscore@1.8.3
+217 info install underscore@1.8.3
+218 info postinstall underscore@1.8.3
+219 verbose unlock done using /Users/stephenprintup/.npm/_locks/underscore-f69e748fc199e44a.lock for /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/underscore
+220 verbose write writing to /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/package.json
+221 info preinstall Mr.Async@0.3.1
+222 verbose readDependencies loading dependencies from /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/package.json
+223 silly prepareForInstallMany adding amdefine@>=0.0.1 from Mr.Async dependencies
+224 verbose readDependencies loading dependencies from /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/package.json
+225 silly cache add args [ 'amdefine@>=0.0.1', null ]
+226 verbose cache add spec amdefine@>=0.0.1
+227 silly cache add parsed spec Result {
+227 silly cache add   raw: 'amdefine@>=0.0.1',
+227 silly cache add   scope: null,
+227 silly cache add   name: 'amdefine',
+227 silly cache add   rawSpec: '>=0.0.1',
+227 silly cache add   spec: '>=0.0.1',
+227 silly cache add   type: 'range' }
+228 silly addNamed amdefine@>=0.0.1
+229 verbose addNamed ">=0.0.1" is a valid semver range for amdefine
+230 silly addNameRange { name: 'amdefine', range: '>=0.0.1', hasData: false }
+231 silly mapToRegistry name amdefine
+232 silly mapToRegistry using default registry
+233 silly mapToRegistry registry https://registry.npmjs.org/
+234 silly mapToRegistry uri https://registry.npmjs.org/amdefine
+235 verbose addNameRange registry:https://registry.npmjs.org/amdefine not in flight; fetching
+236 verbose request uri https://registry.npmjs.org/amdefine
+237 verbose request no auth needed
+238 info attempt registry request try #1 at 2:30:44 PM
+239 verbose etag "7QBUZMENK2X1MN2MI4IF5JSH4"
+240 http request GET https://registry.npmjs.org/amdefine
+241 http 304 https://registry.npmjs.org/amdefine
+242 verbose headers { date: 'Mon, 29 Feb 2016 21:30:44 GMT',
+242 verbose headers   via: '1.1 varnish',
+242 verbose headers   'cache-control': 'max-age=300',
+242 verbose headers   etag: '"7QBUZMENK2X1MN2MI4IF5JSH4"',
+242 verbose headers   age: '139',
+242 verbose headers   connection: 'keep-alive',
+242 verbose headers   'x-served-by': 'cache-ord1729-ORD',
+242 verbose headers   'x-cache': 'HIT',
+242 verbose headers   'x-cache-hits': '12',
+242 verbose headers   'x-timer': 'S1456781444.719705,VS0,VE0',
+242 verbose headers   vary: 'Accept' }
+243 silly get cb [ 304,
+243 silly get   { date: 'Mon, 29 Feb 2016 21:30:44 GMT',
+243 silly get     via: '1.1 varnish',
+243 silly get     'cache-control': 'max-age=300',
+243 silly get     etag: '"7QBUZMENK2X1MN2MI4IF5JSH4"',
+243 silly get     age: '139',
+243 silly get     connection: 'keep-alive',
+243 silly get     'x-served-by': 'cache-ord1729-ORD',
+243 silly get     'x-cache': 'HIT',
+243 silly get     'x-cache-hits': '12',
+243 silly get     'x-timer': 'S1456781444.719705,VS0,VE0',
+243 silly get     vary: 'Accept' } ]
+244 verbose etag https://registry.npmjs.org/amdefine from cache
+245 verbose get saving amdefine to /Users/stephenprintup/.npm/registry.npmjs.org/amdefine/.cache.json
+246 silly addNameRange number 2 { name: 'amdefine', range: '>=0.0.1', hasData: true }
+247 silly addNameRange versions [ 'amdefine',
+247 silly addNameRange   [ '0.0.1',
+247 silly addNameRange     '0.0.2',
+247 silly addNameRange     '0.0.3',
+247 silly addNameRange     '0.0.4',
+247 silly addNameRange     '0.0.5',
+247 silly addNameRange     '0.0.6',
+247 silly addNameRange     '0.0.7',
+247 silly addNameRange     '0.0.8',
+247 silly addNameRange     '0.1.0',
+247 silly addNameRange     '0.1.1',
+247 silly addNameRange     '1.0.0' ] ]
+248 silly addNamed amdefine@1.0.0
+249 verbose addNamed "1.0.0" is a plain semver version for amdefine
+250 silly cache afterAdd amdefine@1.0.0
+251 verbose afterAdd /Users/stephenprintup/.npm/amdefine/1.0.0/package/package.json not in flight; writing
+252 verbose afterAdd /Users/stephenprintup/.npm/amdefine/1.0.0/package/package.json written
+253 silly install resolved [ { name: 'amdefine',
+253 silly install resolved     description: 'Provide AMD\'s define() API for declaring modules in the AMD format',
+253 silly install resolved     version: '1.0.0',
+253 silly install resolved     homepage: 'http://github.com/jrburke/amdefine',
+253 silly install resolved     author:
+253 silly install resolved      { name: 'James Burke',
+253 silly install resolved        email: 'jrburke@gmail.com',
+253 silly install resolved        url: 'http://github.com/jrburke' },
+253 silly install resolved     license: 'BSD-3-Clause AND MIT',
+253 silly install resolved     repository:
+253 silly install resolved      { type: 'git',
+253 silly install resolved        url: 'git+https://github.com/jrburke/amdefine.git' },
+253 silly install resolved     main: './amdefine.js',
+253 silly install resolved     engines: { node: '>=0.4.2' },
+253 silly install resolved     gitHead: '578bc4a3f7dede33f3f3e10edde0c1607005d761',
+253 silly install resolved     bugs: { url: 'https://github.com/jrburke/amdefine/issues' },
+253 silly install resolved     _id: 'amdefine@1.0.0',
+253 silly install resolved     scripts: {},
+253 silly install resolved     _shasum: 'fd17474700cb5cc9c2b709f0be9d23ce3c198c33',
+253 silly install resolved     _from: 'amdefine@>=0.0.1',
+253 silly install resolved     _npmVersion: '2.12.1',
+253 silly install resolved     _nodeVersion: '0.10.36',
+253 silly install resolved     _npmUser: { name: 'jrburke', email: 'jrburke@gmail.com' },
+253 silly install resolved     maintainers: [ [Object] ],
+253 silly install resolved     dist:
+253 silly install resolved      { shasum: 'fd17474700cb5cc9c2b709f0be9d23ce3c198c33',
+253 silly install resolved        tarball: 'http://registry.npmjs.org/amdefine/-/amdefine-1.0.0.tgz' },
+253 silly install resolved     directories: {},
+253 silly install resolved     _resolved: 'https://registry.npmjs.org/amdefine/-/amdefine-1.0.0.tgz',
+253 silly install resolved     readme: 'ERROR: No README data found!' } ]
+254 info install amdefine@1.0.0 into /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async
+255 info installOne amdefine@1.0.0
+256 verbose installOne of amdefine to /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async not in flight; installing
+257 verbose lock using /Users/stephenprintup/.npm/_locks/amdefine-e0c7afabd3f34156.lock for /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/node_modules/amdefine
+258 silly install write writing amdefine 1.0.0 to /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/node_modules/amdefine
+259 verbose unbuild node_modules/webdriver-helper/node_modules/Mr.Async/node_modules/amdefine
+260 silly gentlyRm /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/node_modules/amdefine is being purged from base /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests
+261 verbose gentlyRm don't care about contents; nuking /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/node_modules/amdefine
+262 verbose tar unpack /Users/stephenprintup/.npm/amdefine/1.0.0/package.tgz
+263 verbose tar unpacking to /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/node_modules/amdefine
+264 silly gentlyRm /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/node_modules/amdefine is being purged
+265 verbose gentlyRm don't care about contents; nuking /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/node_modules/amdefine
+266 silly gunzTarPerm modes [ '755', '644' ]
+267 silly gunzTarPerm extractEntry package.json
+268 silly gunzTarPerm extractEntry README.md
+269 silly gunzTarPerm extractEntry LICENSE
+270 silly gunzTarPerm extractEntry amdefine.js
+271 silly gunzTarPerm extractEntry intercept.js
+272 verbose write writing to /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/node_modules/amdefine/package.json
+273 info preinstall amdefine@1.0.0
+274 verbose readDependencies loading dependencies from /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/node_modules/amdefine/package.json
+275 verbose readDependencies loading dependencies from /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/node_modules/amdefine/package.json
+276 silly install resolved []
+277 verbose about to build /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/node_modules/amdefine
+278 info build /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/node_modules/amdefine
+279 info linkStuff amdefine@1.0.0
+280 silly linkStuff amdefine@1.0.0 has /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/node_modules as its parent node_modules
+281 verbose linkBins amdefine@1.0.0
+282 verbose linkMans amdefine@1.0.0
+283 verbose rebuildBundles amdefine@1.0.0
+284 info install amdefine@1.0.0
+285 info postinstall amdefine@1.0.0
+286 verbose unlock done using /Users/stephenprintup/.npm/_locks/amdefine-e0c7afabd3f34156.lock for /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async/node_modules/amdefine
+287 verbose about to build /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async
+288 info build /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async
+289 info linkStuff Mr.Async@0.3.1
+290 silly linkStuff Mr.Async@0.3.1 has /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules as its parent node_modules
+291 verbose linkBins Mr.Async@0.3.1
+292 verbose linkMans Mr.Async@0.3.1
+293 verbose rebuildBundles Mr.Async@0.3.1
+294 verbose rebuildBundles [ 'amdefine' ]
+295 info install Mr.Async@0.3.1
+296 info postinstall Mr.Async@0.3.1
+297 verbose unlock done using /Users/stephenprintup/.npm/_locks/Mr-Async-f5a9246ce7eb2f49.lock for /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper/node_modules/Mr.Async
+298 verbose about to build /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper
+299 info build /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper
+300 info linkStuff webdriver-helper@0.2.1
+301 silly linkStuff webdriver-helper@0.2.1 has /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules as its parent node_modules
+302 verbose linkBins webdriver-helper@0.2.1
+303 verbose linkMans webdriver-helper@0.2.1
+304 verbose rebuildBundles webdriver-helper@0.2.1
+305 verbose rebuildBundles [ 'Mr.Async', 'underscore' ]
+306 info install webdriver-helper@0.2.1
+307 verbose unsafe-perm in lifecycle true
+308 info webdriver-helper@0.2.1 Failed to exec install script
+309 verbose unlock done using /Users/stephenprintup/.npm/_locks/webdriver-helper-ce44be79add9d60e.lock for /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper
+310 verbose stack Error: webdriver-helper@0.2.1 install: `npm run build`
+310 verbose stack Exit status 1
+310 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+310 verbose stack     at emitTwo (events.js:87:13)
+310 verbose stack     at EventEmitter.emit (events.js:172:7)
+310 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+310 verbose stack     at emitTwo (events.js:87:13)
+310 verbose stack     at ChildProcess.emit (events.js:172:7)
+310 verbose stack     at maybeClose (internal/child_process.js:818:16)
+310 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+311 verbose pkgid webdriver-helper@0.2.1
+312 verbose cwd /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests
+313 error Darwin 15.3.0
+314 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "webdriver-helper"
+315 error node v4.2.3
+316 error npm  v2.14.7
+317 error code ELIFECYCLE
+318 error webdriver-helper@0.2.1 install: `npm run build`
+318 error Exit status 1
+319 error Failed at the webdriver-helper@0.2.1 install script 'npm run build'.
+319 error This is most likely a problem with the webdriver-helper package,
+319 error not with npm itself.
+319 error Tell the author that this fails on your system:
+319 error     npm run build
+319 error You can get their info via:
+319 error     npm owner ls webdriver-helper
+319 error There is likely additional logging output above.
+320 verbose exit [ 1, true ]
+321 verbose unbuild node_modules/webdriver-helper
+322 info preuninstall webdriver-helper@0.2.1
+323 info uninstall webdriver-helper@0.2.1
+324 verbose unbuild rmStuff webdriver-helper@0.2.1 from /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules
+325 info postuninstall webdriver-helper@0.2.1
+326 silly gentlyRm /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper is being purged from base /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests
+327 verbose gentlyRm don't care about contents; nuking /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper
+328 silly vacuum-fs purging /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules/webdriver-helper
+329 silly vacuum-fs quitting because other entries in /Users/stephenprintup/dropbox/coding/trainingPeaks/tTSS_Tests/node_modules

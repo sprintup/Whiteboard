@@ -5,7 +5,7 @@ var browserActions = {
     //
   },
   url: function(argument) {
-	return 'http://home.trainingpeaks.com/login';
+	return 'https://home.trainingpeaks.com/login';
   },
   username: function(argument) {
 	return 'EnterUsernameHere';

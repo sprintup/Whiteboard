@@ -14,12 +14,14 @@ module.exports = function () {
 
 	this.Given(/^The browser opens to the login page$/, function (callback) {
     this.driver.get(myActions.url());
-		// assert.equal(,myActions.url());
-		console.log('window.location.href: ' + this.driver.executeScript("return window.location.href"));
+		this.driver.getCurrentUrl().then(function (browserUrl) {
+			assert.equal(browserUrl,myActions.url(),'expected site and actual site don\'t match');
+		});
 	  /*
 	  This code opens the page
   	browser.get('http://home.trainingpeaks.com/login');
 	  */
+
 	  callback().pending();
 	});
 
