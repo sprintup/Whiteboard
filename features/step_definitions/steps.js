@@ -14,10 +14,8 @@ module.exports = function () {
 
 	this.Given(/^The browser opens to the login page$/, function (callback) {
     this.driver.get(myActions.url());
-    // assert.equal(1,2,'test assert');
-    // console.log(this.driver);
-    // assert.equal
-    // console.log(document);
+		// assert.equal(,myActions.url());
+		console.log('window.location.href: ' + this.driver.executeScript("return window.location.href"));
 	  /*
 	  This code opens the page
   	browser.get('http://home.trainingpeaks.com/login');

@@ -1,6 +1,7 @@
 ##Update log
 * The terminal command cucumberjs now opens and directs the browser to start testing. It will enter the username and password and log in. 
 * Working on integrating an assertion library for tests. It currently supports the limited but functional [Node assertion libarary](https://nodejs.org/api/assert.html). Exposing the window and document objects in the step definitions can be problematic, here is an [article](https://www.custardbelly.com/blog/blog-posts/2014/02/10/cucumberjs-tests-browser/index.html). I'm exploring options. 
+* Gaining access to the DOM to test validity of assertions. Functions like [getCurrentUrl()](http://appfigures.github.io/webdriver-js-api-reference/symbols/webdriver.WebDriver.html#getCurrentUrl) return promises instead of values. 
 * Might consider using [Nightwatch](http://nightwatchjs.org/) for js/selenium testing instead of cucumberjs. 
 
 ### Overview
@@ -28,9 +29,12 @@ You can run 'cucumberjs' in the terminal after installing the packages (npm inst
 
 #### Future Upgrades:
 * Implicit wait after login
-* Clean Environment after every scenario is run.
-* Put username and password in config file
-* Have it take screenshots when tests fail.
+* Clean Environment after every scenario is run
+* Have it take screenshots when tests fail
+* Report generation for continuous integration
+* Feature tags for dynamic automation
+* Failed test file
+* Browser based tool instead of CLI using [Browserfy](http://browserify.org/);
 
 #### Tips:
 * CLI Command: cucumberjs --help
