@@ -18,11 +18,10 @@ cucumberjs
 #### Testing
 You can run 'cucumberjs' in the terminal after installing the packages (npm install) from the root directory
 * Use cucumberjs in the terminal to run tests (not cucumber)
-* The test that runs is an example test. 
-* The tests to automate are found in the other .txt files as notes. Once I get to automation, I'll mix these
+* The tests to automate are found in the other .txt files as notes. 
 
 #### Automation
-* To see it log in and run after the page loads run 'node.driver' from inside the webDriver folder. 
+* To see it log in and run after the page loads run 'node driver.js' from inside the webDriver folder. 
 * You might have to include the latest chrome web driver binary in your path for it to automate. It's available [here](http://chromedriver.storage.googleapis.com/index.html);
 * You have to replace the passwords in driver.js in webDriver
 
