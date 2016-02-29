@@ -15,11 +15,10 @@ module.exports = function () {
 	this.When(/^User enters username and password$/, function (callback) {
 	  // Write code here that turns the phrase above into concrete actions
 		this.driver.findElement({id:'Username'})
-			.sendKeys('username');
+			.sendKeys('');
 		this.driver.findElement({id:'Password'})
-			.sendKeys('password');
-
-	  callback.pending();
+			.sendKeys('');
+	  callback();
 	});
 
 	this.When(/^User clicks login button$/, function (callback) {
@@ -29,11 +28,13 @@ module.exports = function () {
 	  This code clicks button
 		browser.findElement(webdriver.By.id('btnSubmit')).click();
 	  */
-	  callback.pending();
+	  callback();
 	});
 
 	this.Then(/^Web app should load after a period of time$/, function (callback) {
 	  // Write code here that turns the phrase above into concrete actions
+	  this.driver.sleep(9000);
+	  this.driver.executeScript('document.readyState === "complete"').then(function(){console.log('readyState: ')});
 
 	  /*
 	  This code lets log in occur
