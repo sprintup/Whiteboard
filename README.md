@@ -8,8 +8,8 @@ An automated code test that logs into a website, finds elements and tests calucu
 ### Installation and Setup
 I added a package.json, so you should just be able to do npm install to install these. 
 * cucumberjs: https://www.npmjs.com/package/cucumber
-* selenium_web_driver: https://www.npmjs.com/package/selenium*webdriver
 * zombie: https://www.npmjs.com/package/zombie
+* selenium_web_driver: https://www.npmjs.com/package/selenium*webdriver
 
 1. Clone project and navigate to the project's root directory in the terminal
 2. Make sure you have [node.js](https://nodejs.org/en/) installed and run
