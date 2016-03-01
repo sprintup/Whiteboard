@@ -31,11 +31,11 @@ module.exports = function () {
 			.sendKeys(myActions.username());
 
 		// Assertion
+	  // callback.pending();
 		this.driver.findElement({id:'Username'})
 			.getAttribute("value")
 			.then(function (element) {
-				console.log('expected: '+myActions.username()+' actual: '+ element);
-				assert.equal(element,myActions.username(),'actual <'+element+'> expected <'+myActions.username()+'>');
+				assert.equal(element,myActions.username(),'expected <'+myActions.username()+'> actual <'+element+'>');
 			  callback();
 			});
 	});
@@ -44,7 +44,14 @@ module.exports = function () {
 	  // Write code here that turns the phrase above into concrete actions
 		this.driver.findElement({id:'Password'})
 		.sendKeys(myActions.password());
-	  callback.pending();
+
+		//Assertion
+		this.driver.findElement({id:'Password'})
+			.getAttribute("value")
+			.then(function (element) {
+				assert.equal(element,myActions.password(),'expected <'+myActions.password()+'> actual <'+element+'>' );
+			  callback();
+			});
 	});
 
 	this.When(/^User clicks login button$/, function (callback) {
