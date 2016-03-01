@@ -1,5 +1,6 @@
 ##Update log
-* It tests most of the excercises, I just have to look at some element ids. 
+* It tests all excercises.
+* The tests almost pass for all excercises, but I have to look at some element ids. 
 * I'm working on iterating through workout types. 
 
 ### Overview
