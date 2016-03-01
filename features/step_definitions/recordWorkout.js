@@ -2,6 +2,8 @@
 	Considerations:
 		-should any workouts currently in the cells be deleted?
 		-should the workouts be deleted immediatly or as a batch?
+	Assumptions:
+		-tests assume workout being tested is the most recent 
 */
 var assert = require('assert');
 var browserActions = require(process.cwd() + '/spec/model');
@@ -29,13 +31,32 @@ module.exports = function (argument) {
 	});
 
 	this.When(/^Inspects workout that was just added$/, function (callback) {
-	  // Write code here that turns the phrase above into concrete actions
-	  this.driver.wait(30000);
-	  callback.pending();
+	  /*
+			This step assumes workout being inspected is most recent workout
+	  */ 
+	  this.driver.sleep(1000); //this is needed for the element to be rendered
+	  this.driver.executeScript('document.getElementsByClassName(\'workoutDiv\')[document.getElementsByClassName(\'workoutDiv\').length-1].click()').
+	  then(function () {
+	  	callback();
+	  });
 	});
 
 	this.Then(/^the tTSS score should equal (\d+)$/, function (arg1, callback) {
 	  // Write code here that turns the phrase above into concrete actions
-	  callback.pending();
+	  this.driver.findElement({id:'tssCompletedField'}).
+	  	getAttribute('value').
+	  	then(function (tTSS) {
+	  		assert(tTSS,arg1,'expected tTSS: <'+arg1+'> actual <'+tTSS+'>');
+			  callback();
+  	});
 	});
-}
+
+	this.Then(/^Delete workout$/, function (callback) {
+  // Write code here that turns the phrase above into concrete actions
+  	this.driver.sleep(1000);
+	  this.driver.findElement({id:'delete'}).click();
+	  this.driver.findElement({id:'userConfirm'}).click().then(function () {
+		  callback();
+	  });
+	});
+};

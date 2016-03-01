@@ -43,3 +43,4 @@ Rules:
 		When User adds workout with heartrate and duration
 		And Inspects workout that was just added
 		Then the tTSS score should equal 100
+		And Delete workout

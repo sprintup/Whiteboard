@@ -1,7 +1,6 @@
 ##Update log
-* It tests with assertions through the log in screen and also records a workout
-* I'm going to continue the process of inserting assertions for the steps I've already defined to test the tTSS score in the webDriver/driver.js file
-* Currently working on filling out feature to test tTSS, delete workout and iterate throught workout types.
+* It tests a single run's tTSS score. 
+* I'm working on iterating through workout types. 
 
 ### Overview
 An automated code test that logs into a website, finds elements and tests caluculated values. It runs cucumberjs with Node assertions and selenium web driver using Chrome. 
@@ -48,6 +47,7 @@ You can run 'cucumberjs' in the terminal after installing the packages (npm inst
 * Have it take screenshots when tests fail
 * Report generation for continuous integration
 * Feature tags for dynamic automation
+* Move all css classes and ids into model
 * Failed test file 
 * Call stack file
 * Browser based tool instead of CLI using [Browserfy](http://browserify.org/).
