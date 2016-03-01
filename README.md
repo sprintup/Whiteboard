@@ -1,6 +1,6 @@
 ##Update log
-* First assertion test works, matching requested url to the browser's url. You can see it fail by removing the 's' from https in the spec/model.js file. 
-* The terminal command cucumberjs now opens and directs the browser to start testing. It will enter the username and password and log in. 
+* It tests with assertions through the log in screen and stops on the calendar. 
+* I'm going to continue the process of inserting assertions for the steps I've already defined to test the tTSS score in the webDriver/driver.js file
 
 ### Overview
 An automated code test that logs into a website, finds elements and tests caluculated values. 

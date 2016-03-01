@@ -9,7 +9,7 @@ module.exports = function () {
 	/*
 	Enter variables in the spec/model.js file
 	*/
-	var myActions = browserActions.create(); 
+	var myActions = browserActions.CreateBrowserActions(); 
 
   this.World = require('../support/world').World;
 
@@ -17,21 +17,16 @@ module.exports = function () {
     this.driver.get(myActions.url());
 		this.driver.getCurrentUrl().then(function (browserUrl) {
 			assert.equal(browserUrl,myActions.url(),'expected <'+browserUrl+'> was <'+myActions.url()+'>');
+		  callback();
 		});
-	  /*
-	  This code opens the page
-  	browser.get('http://home.trainingpeaks.com/login');
-	  */
-	  callback().pending();
 	});
 
 	this.When(/^User enters username$/, function (callback) {
-	  // Write code here that turns the phrase above into concrete actions
+	  // Action
 		this.driver.findElement({id:'Username'})
 			.sendKeys(myActions.username());
 
 		// Assertion
-	  // callback.pending();
 		this.driver.findElement({id:'Username'})
 			.getAttribute("value")
 			.then(function (element) {
@@ -41,7 +36,7 @@ module.exports = function () {
 	});
 
 	this.When(/^User enters password$/, function (callback) {
-	  // Write code here that turns the phrase above into concrete actions
+	  // Action
 		this.driver.findElement({id:'Password'})
 		.sendKeys(myActions.password());
 
@@ -55,20 +50,22 @@ module.exports = function () {
 	});
 
 	this.When(/^User clicks login button$/, function (callback) {
-	  // Write code here that turns the phrase above into concrete actions
-
-	  callback.pending();
+	  // Action
+	  this.driver.findElement({id:'btnSubmit'})
+	  	.click()
+	  	.then(function () {
+			  callback();
+	  	});
 	});
 
 	this.Then(/^Web app should load after a period of time$/, function (callback) {
-	  // Write code here that turns the phrase above into concrete actions
+	  // Action
 	  this.driver.sleep(9000);
-	  this.driver.executeScript('document.readyState === "complete"').then(function(){console.log('readyState: ')});
-
-	  /*
-	  This code lets log in occur
-		browser.sleep(9000);
-	  */
-	  callback.pending();
+	  this.driver.getTitle().then(function (title) {
+	  	//Assert: Title should be 'TrainingPeaks - Plan your training, track your workouts and measure your progress'
+	  	var expected = 'TrainingPeaks - Plan your training, track your workouts and measure your progress';
+	  	assert.equal(title,expected,'expected <'+expected+'> actual <'+title+'>');
+		  callback();
+	  })
 	});
 };
