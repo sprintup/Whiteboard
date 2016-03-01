@@ -3,16 +3,23 @@
 * I'm going to continue the process of inserting assertions for the steps I've already defined to test the tTSS score in the webDriver/driver.js file
 
 ### Overview
-An automated code test that logs into a website, finds elements and tests caluculated values. 
+An automated code test that logs into a website, finds elements and tests caluculated values. It runs cucumberjs with Node assertions and selenium web driver using Chrome. 
 
-### Installations
+### Installation and Setup
 I added a package.json, so you should just be able to do npm install to install these. 
 * cucumberjs: https://www.npmjs.com/package/cucumber
 * selenium_web_driver: https://www.npmjs.com/package/selenium*webdriver
 * zombie: https://www.npmjs.com/package/zombie
 
+1. Clone project and navigate to the project's root directory in the terminal
+2. Make sure you have [node.js](https://nodejs.org/en/) installed and run
 ```
 npm install 
+
+```
+3. Put [Chrome binary](http://chromedriver.storage.googleapis.com/index.html) on your [path](https://sites.google.com/a/chromium.org/chromedriver/getting-started). 
+4. Input site username and password in the spec/model.js file and run
+```
 cucumberjs
 ```
 #### Testing
