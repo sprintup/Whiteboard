@@ -32,7 +32,7 @@ You can run 'cucumberjs' in the terminal after installing the packages (npm inst
 * You might have to include the latest chrome web driver binary in your path for it to automate. It's available [here](http://chromedriver.storage.googleapis.com/index.html).
 * You have to replace the passwords in driver.js in webDriver
 
-#### Future Upgrades:
+### Future Upgrades:
 * Implicit wait after login
 * Clean Environment after every scenario is run
 * Have it take screenshots when tests fail
@@ -41,7 +41,7 @@ You can run 'cucumberjs' in the terminal after installing the packages (npm inst
 * Failed test file
 * Browser based tool instead of CLI using [Browserfy](http://browserify.org/).
 
-#### Notes:
+### Notes:
 * CLI Command: cucumberjs --help
 * Supported Formatting styles
 	* cucumberjs --format progress
