@@ -11,6 +11,7 @@ I added a package.json, so you should just be able to do npm install to install 
 * zombie: https://www.npmjs.com/package/zombie
 * selenium_web_driver: https://www.npmjs.com/package/selenium*webdriver
 
+
 1. Clone project and navigate to the project's root directory in the terminal
 2. Make sure you have [node.js](https://nodejs.org/en/) installed and run
 ```
