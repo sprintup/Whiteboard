@@ -7,7 +7,7 @@
 An automated code test that logs into a website, finds elements and tests caluculated values. It runs cucumberjs with Node assertions and selenium web driver using Chrome. 
 
 ### Installation
-I added a package.json, so you should just be able to do npm install to install these. 
+I added a package.json, so you should just be able to do `npm install` to install these. 
 * cucumberjs: https://www.npmjs.com/package/cucumber
 * zombie: https://www.npmjs.com/package/zombie
 * selenium_web_driver: https://www.npmjs.com/package/selenium*webdriver
