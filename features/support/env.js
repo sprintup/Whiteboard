@@ -3,7 +3,7 @@
 */
 
 var configure = function () {
-    this.setDefaultTimeout(60 * 1000); //default time is 5 seconds
+//     this.setDefaultTimeout(60 * 1000); //uncomment this to resolve processes that take more than 5 seconds
 };
 
 module.exports = configure;

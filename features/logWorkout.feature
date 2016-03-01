@@ -39,7 +39,7 @@ Rules:
 -user is logged into the calendar page 
 
 	Scenario: From the Calendar page the user logs a workout with heart rate and duration
-		Given The browser opens to the calendar page
+		Given The browser is open to the calendar page
 		When User adds workout with heartrate and duration
 		And Inspects workout that was just added
 		Then the tTSS score should equal 100

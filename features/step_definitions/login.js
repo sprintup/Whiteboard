@@ -11,9 +11,7 @@ module.exports = function () {
 	*/
 	var myActions = browserActions.CreateBrowserActions(); 
 
-  this.World = require('../support/world').World;
-
-	this.Given(/^The browser opens to the login page$/, function (callback) {
+	this.Given(/^The browser opens to the login page$/,{timeout: 60 * 1000}, function (callback) {
     this.driver.get(myActions.url_login());
 		this.driver.getCurrentUrl().then(function (browserUrl) {
 			assert.equal(browserUrl,myActions.url_login(),'expected <'+browserUrl+'> was <'+myActions.url_login()+'>');
@@ -58,7 +56,7 @@ module.exports = function () {
 	  	});
 	});
 
-	this.Then(/^Web app should load after a period of time$/, function (callback) {
+	this.Then(/^Web app should load after a period of time$/, {timeout: 60 * 1000}, function (callback) {
 	  // Action
 	  this.driver.sleep(9000);
 	  this.driver.getTitle().then(function (title) {

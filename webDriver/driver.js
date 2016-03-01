@@ -12,8 +12,8 @@ var browser = new webdriver.Builder()
 		.build();
 
 browser.get('http://home.trainingpeaks.com/login');
-browser.findElement(webdriver.By.id('Username')).sendKeys('');
-browser.findElement(webdriver.By.id('Password')).sendKeys('');
+browser.findElement(webdriver.By.id('Username')).sendKeys(/*enter username here for test run*/);	
+browser.findElement(webdriver.By.id('Password')).sendKeys(/*enter password here for test run*/);	
 browser.findElement(webdriver.By.id('btnSubmit')).click();
 browser.sleep(15000);
 

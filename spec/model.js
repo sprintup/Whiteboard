@@ -1,15 +1,15 @@
 /*
-  Insert test data here once to be used throughout the steps
+  Insert test data here once to be used throughout the steps...
 */
 
 'use strict';
 
 var browserActions = {
   username: function() {
-  	return 'username';     //*** for example, enter username here
+  	return 'username';     //*** ...for example, enter username here...
   },
   password: function() {
-  	return 'password';     //*** and enter password here, etc.
+  	return 'password';     //*** ...and enter password here, etc.
   },
   url_login: function() {
     return 'https://home.trainingpeaks.com/login';
