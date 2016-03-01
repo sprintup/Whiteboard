@@ -1,5 +1,5 @@
 ##Update log
-* It tests a single run's tTSS score. 
+* It tests most of the excercises, I just have to look at some element ids. 
 * I'm working on iterating through workout types. 
 
 ### Overview
@@ -24,6 +24,7 @@ cucumberjs features/shared/login.feature features/recordWorkouts.feature
 #### Features:
 * Extensible by setting up different platforms in the features/support/world.js file
 * Maintainable by using singleton design pattern to insert data throughout steps in spec/model.js file
+* DRY by specifying particular ordered features straight in the command line 
 * CLI help: `cucumberjs --help`
 * Supported Formatting styles
 	* `cucumberjs --format progress`

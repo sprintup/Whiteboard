@@ -5,6 +5,7 @@
 */
 
 'use strict';
+var workouts = require('./mock/workouts.js');
 
 var browserActions = {
   username: function() {
@@ -21,10 +22,11 @@ var browserActions = {
   }
 };
 
-
-
 module.exports = {
   CreateBrowserActions: function() {
     return Object.create(browserActions);
+  },
+  CreateWorkouts: function () {
+    return Object.create(workouts);
   }
 };

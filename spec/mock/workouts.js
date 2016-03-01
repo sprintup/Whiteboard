@@ -1,5 +1,4 @@
-// module.exports = {
-var workouts = {
+module.exports = {
 	run : {
 		type 							 : 'run',
 		heartRateThreshold : 150,
@@ -89,5 +88,3 @@ var workouts = {
 		className 				 : 'addWorkout Walk future'
 	}
 };
-
-console.log('workouts.length '+Object.keys(workouts).length);
