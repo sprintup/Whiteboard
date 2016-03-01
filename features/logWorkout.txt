@@ -30,6 +30,7 @@
 #11-other: test with default threshold values
 #12-walk: test with walk threshold values
 
+@single
 Feature: Record Workout 
 In order to test tTSS the user must be logged in
 As a logged in user I would like to record a workout

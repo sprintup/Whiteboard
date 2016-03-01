@@ -1,5 +1,7 @@
 /*
-  Insert test data here once to be used throughout the steps...
+  TODO: Refactor this and steps so their properties instead of functions
+
+  Note: Insert test data here once to be used throughout the steps...
 */
 
 'use strict';
@@ -19,30 +21,10 @@ var browserActions = {
   }
 };
 
-var thresholds = {
-  runHeartRateThreshold: function () {
-    return 150;    
-  },
-  bikeHeartRateThreshold: function () {
-    return 150;    
-  },
-  swimHeartRateThreshold: function () {
-    return 135;    
-  },
-  walkHeartRateThreshold: function () {
-    return 125;    
-  },
-  defaultHeartRateThreshold: function () {
-    return 145;    
-  },
-}
+
 
 module.exports = {
   CreateBrowserActions: function() {
     return Object.create(browserActions);
-  },
-
-  CreateThresholds: function () {
-    return Object.create(thresholds);
   }
 };

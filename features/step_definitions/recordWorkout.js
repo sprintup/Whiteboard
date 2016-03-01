@@ -1,4 +1,6 @@
 /*
+	These are shared steps for all workouts.
+	
 	Considerations:
 		-should any workouts currently in the cells be deleted?
 		-should the workouts be deleted immediatly or as a batch?
@@ -18,17 +20,17 @@ module.exports = function (argument) {
 	  });
 	});
 
-	this.When(/^User adds workout with heartrate and duration$/, function (callback) {
-	  // Write code here that turns the phrase above into concrete actions
-	  this.driver.executeScript('document.getElementsByClassName(\'addWorkout\')[70].click()');
-		this.driver.executeScript('document.getElementsByClassName(\'addWorkout Run future\')[0].click()');
-		this.driver.findElement({id:'totalTimeCompletedField'}).sendKeys('1:00:00');
-		this.driver.findElement({id:'hrAvgField'}).sendKeys('150');
-		this.driver.findElement({id:'close'}).click().then(function () {
-		  callback();
-		});
+	// this.When(/^User adds workout with heartrate and duration$/, function (callback) {
+	//   // Write code here that turns the phrase above into concrete actions
+	//   this.driver.executeScript('document.getElementsByClassName(\'addWorkout\')[70].click()');
+	// 	this.driver.executeScript('document.getElementsByClassName(\'addWorkout Run future\')[0].click()');
+	// 	this.driver.findElement({id:'totalTimeCompletedField'}).sendKeys('1:00:00');
+	// 	this.driver.findElement({id:'hrAvgField'}).sendKeys('150');
+	// 	this.driver.findElement({id:'close'}).click().then(function () {
+	// 	  callback();
+	// 	});
 
-	});
+	// });
 
 	this.When(/^Inspects workout that was just added$/, function (callback) {
 	  /*
