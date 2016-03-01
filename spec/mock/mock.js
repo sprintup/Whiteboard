@@ -1,3 +1,0 @@
-/*
-This is for mock objects for domain world testing
-*/
