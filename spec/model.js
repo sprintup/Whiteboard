@@ -5,17 +5,17 @@
 'use strict';
 
 var browserActions = {
-  login: function(item) {
-    //
-  },
-  url: function() {
-  	return 'https://home.trainingpeaks.com/login';
-  },
   username: function() {
-  	return 'username';     //*** enter username here
+  	return 'username';     //*** for example, enter username here
   },
   password: function() {
-  	return 'password';     //*** enter password here
+  	return 'password';     //*** and enter password here, etc.
+  },
+  url_login: function() {
+    return 'https://home.trainingpeaks.com/login';
+  },
+  pageTitle_calendar: function() {
+    return 'TrainingPeaks - Plan your training, track your workouts and measure your progress';
   }
 };
 

@@ -57,42 +57,6 @@
 
 // // module.exports.World = World1;
 
-
-/*
-Example try #1: it carries world to steps
-*/
-// 'use strict';
-
-// var WebWorld = function World(callback) {
-
-//   this.zombie = require('zombie');
-//   this.webdriver = require('selenium-webdriver');
-//       By = this.webdriver.By;
-//       until = this.webdriver.until;
-
-//   this.logIn = function(username, password) {
-//     var browser = new this.webdriver.Builder() 
-//     .usingServer()
-//     .withCapabilities({'browserName': 'chrome' })
-//     .build();
-//     // console.log('in world/login with username: ' + username + ' and password: ' + password); 
-//     // console.log('this.browser.get' + this.browser.get); 
-//     // console.log('this.browser: ' + this.browser);
-//     // console.log('this: ' + this);
-//     // console.log('this.webdriver' + this.webdriver);
-//     // console.log('this.webdriver.Builder(): ' + this.webdriver.Builder());
-//     browser.get('http://home.trainingpeaks.com/login');
-//     browser.findElement(this.webdriver.By.id('Username')).sendKeys(username);
-//     browser.findElement(this.webdriver.By.id('Password')).sendKeys(password);
-//     browser.findElement(this.webdriver.By.id('btnSubmit')).click();
-//     browser.sleep(15000);
-//   };
-
-//   // callback();
-// };
-
-// module.exports.World = WebWorld;
-
 /*
 Example try #2
 */

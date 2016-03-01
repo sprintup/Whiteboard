@@ -30,3 +30,16 @@
 #11-other: test with default threshold values
 #12-walk: test with walk threshold values
 
+Feature: Record Workout 
+In order to test tTSS the user must be logged in
+As a logged in user I would like to record a workout
+I would like to record a workout from the calendar screen
+
+Rules: 
+-user is logged into the calendar page 
+
+	Scenario: From the Calendar page the user logs a workout with heart rate and duration
+		Given The browser opens to the calendar page
+		When User adds workout with heartrate and duration
+		And Inspects workout that was just added
+		Then the tTSS score should equal 100

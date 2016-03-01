@@ -1,6 +1,7 @@
 ##Update log
 * It tests with assertions through the log in screen and stops on the calendar. 
 * I'm going to continue the process of inserting assertions for the steps I've already defined to test the tTSS score in the webDriver/driver.js file
+* Currently working on adding scenario for recording workout
 
 ### Overview
 An automated code test that logs into a website, finds elements and tests caluculated values. It runs cucumberjs with Node assertions and selenium web driver using Chrome. 
@@ -22,6 +23,7 @@ npm install
 ```
 cucumberjs
 ```
+
 #### Testing
 You can run 'cucumberjs' in the terminal after installing the packages (npm install) from the root directory
 * Use cucumberjs in the terminal to run tests (not cucumber)
@@ -31,6 +33,14 @@ You can run 'cucumberjs' in the terminal after installing the packages (npm inst
 * To see it log in and run after the page loads run 'node driver.js' from inside the webDriver folder. 
 * You might have to include the latest chrome web driver binary in your path for it to automate. It's available [here](http://chromedriver.storage.googleapis.com/index.html).
 * You have to replace the passwords in driver.js in webDriver
+
+#### Features:
+* Extensible by setting up different platforms in the features/support/world.js file
+* Maintainable by using singleton design pattern to insert data throughout steps in spec/model.js file
+* CLI help: `cucumberjs --help`
+* Supported Formatting styles
+	* `cucumberjs --format progress`
+* Use tags to run only certain tests
 
 ### Future Upgrades:
 * Implicit wait after login
@@ -42,9 +52,5 @@ You can run 'cucumberjs' in the terminal after installing the packages (npm inst
 * Browser based tool instead of CLI using [Browserfy](http://browserify.org/).
 
 ### Notes:
-* CLI Command: cucumberjs --help
-* Supported Formatting styles
-	* cucumberjs --format progress
-* Use tags to run only certain tests
 * Might consider using [Nightwatch](http://nightwatchjs.org/) for js/selenium testing instead of cucumberjs. 
 

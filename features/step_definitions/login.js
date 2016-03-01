@@ -14,9 +14,9 @@ module.exports = function () {
   this.World = require('../support/world').World;
 
 	this.Given(/^The browser opens to the login page$/, function (callback) {
-    this.driver.get(myActions.url());
+    this.driver.get(myActions.url_login());
 		this.driver.getCurrentUrl().then(function (browserUrl) {
-			assert.equal(browserUrl,myActions.url(),'expected <'+browserUrl+'> was <'+myActions.url()+'>');
+			assert.equal(browserUrl,myActions.url_login(),'expected <'+browserUrl+'> was <'+myActions.url_login()+'>');
 		  callback();
 		});
 	});
@@ -62,9 +62,7 @@ module.exports = function () {
 	  // Action
 	  this.driver.sleep(9000);
 	  this.driver.getTitle().then(function (title) {
-	  	//Assert: Title should be 'TrainingPeaks - Plan your training, track your workouts and measure your progress'
-	  	var expected = 'TrainingPeaks - Plan your training, track your workouts and measure your progress';
-	  	assert.equal(title,expected,'expected <'+expected+'> actual <'+title+'>');
+	  	assert.equal(title,myActions.pageTitle_calendar(),'expected page title: <'+myActions.pageTitle_calendar()+'> actual: <'+title+'>');
 		  callback();
 	  })
 	});
