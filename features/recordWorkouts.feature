@@ -27,7 +27,6 @@ Rules:
 		Then the tTSS score should equal 100
 		And Delete workout
 	
-	@inspect
 	Scenario: From the Calendar page the user logs CROSSTRAIN with heart rate and duration
 		Given The browser is open to the calendar page
 		When User adds CROSSTRAIN with heartrate and duration
@@ -56,7 +55,6 @@ Rules:
 		Then the tTSS score should equal 100
 		And Delete workout
 
-	@inspect
 	Scenario: From the Calendar page the user logs XC-SKI with heart rate and duration
 		Given The browser is open to the calendar page
 		When User adds XC-SKI with heartrate and duration
@@ -71,7 +69,6 @@ Rules:
 		Then the tTSS score should equal 100
 		And Delete workout
 
-	@inspect
 	Scenario: From the Calendar page the user logs OTHER with heart rate and duration
 		Given The browser is open to the calendar page
 		When User adds OTHER with heartrate and duration

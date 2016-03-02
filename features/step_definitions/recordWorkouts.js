@@ -51,9 +51,9 @@ module.exports = function (){
 		this.driver.executeScript('document.getElementsByClassName(\'addWorkout Crosstrain future\')[0].click()'); //mod
 		this.driver.findElement({id:'totalTimeCompletedField'}).sendKeys(workouts.crosstrain.duration);	//mod
 		this.driver.findElement({id:'hrAvgField'}).sendKeys(workouts.crosstrain.heartRateThreshold); //mod
-		this.driver.findElement({id:'close'}).click();
-		
-	  callback();			//TODO: PUT THIS IN A THEN WITHOUT IT GIVING A STALEREFERENCEERROR
+		this.driver.findElement({id:'close'}).click().then(function () {
+		  callback();
+		});		
 	});
 
 	this.When(/^User adds MOUNTAINBIKE with heartrate and duration$/, function (callback) {
@@ -91,19 +91,13 @@ module.exports = function (){
 
 	this.When(/^User adds XC\-SKI with heartrate and duration$/, function (callback) {
 	  // Write code here that turns the phrase above into concrete actions
-	  console.log('1');
 	  this.driver.executeScript('document.getElementsByClassName(\'addWorkout\')[70].click()');
-	  console.log('2');
 		this.driver.executeScript('document.getElementsByClassName(\'addWorkout XC-Ski future\')[0].click()'); //mod
-	  console.log('3');
 		this.driver.findElement({id:'totalTimeCompletedField'}).sendKeys(workouts.xcski.duration);	//mod
-	  console.log('4');
 		this.driver.findElement({id:'hrAvgField'}).sendKeys(workouts.xcski.heartRateThreshold); //mod
-	  console.log('5');
-		this.driver.findElement({id:'close'}).click();
-	  console.log('6');
-
-	  callback();		//TODO: PUT THIS IN A THEN WITHOUT IT GIVING A STALEREFERENCEERROR
+		this.driver.findElement({id:'close'}).click().then(function () {
+		  callback();
+		});;
 	});
 
 	this.When(/^User adds ROWING with heartrate and duration$/, function (callback) {

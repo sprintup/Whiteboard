@@ -1,6 +1,6 @@
 ##Update log
 * It tests all excercises.
-* The tests almost pass for all excercises, but some give a StaleElementReferenceError. 
+* The tests almost pass for all excercises, but some give a StaleElementReferenceError. This is a race condition and I'm working on it. ([link](https://bocoup.com/weblog/a-day-at-the-races))
 
 ### Overview
 An automated code test that logs into a website, finds elements and tests caluculated values. It runs [cucumberjs](https://github.com/cucumber/cucumber-js) with [Node assertions](https://nodejs.org/api/assert.html) and [selenium web driver](http://appfigures.github.io/webdriver-js-api-reference/symbols/webdriver.WebDriver.html) using Chrome. 

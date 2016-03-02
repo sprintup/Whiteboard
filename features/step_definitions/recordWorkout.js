@@ -21,7 +21,7 @@ module.exports = function (argument) {
 	});
 
 	/*
-	Workouts are added individually in the recordWorkouts.js step definition file
+		Workouts are added individually in the recordWorkouts.js step definition file
 	*/
 
 	this.When(/^Inspects workout that was just added$/, function (callback) {
