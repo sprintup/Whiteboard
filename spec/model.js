@@ -8,18 +8,10 @@
 var workouts = require('./mock/workouts.js');
 
 var browserActions = {
-  username: function() {
-  	return 'username';     //*** ...for example, enter username here...
-  },
-  password: function() {
-  	return 'password';     //*** ...and enter password here, etc.
-  },
-  url_login: function() {
-    return 'https://home.trainingpeaks.com/login';
-  },
-  pageTitle_calendar: function() {
-    return 'TrainingPeaks - Plan your training, track your workouts and measure your progress';
-  }
+  username  : 'username', //*** ...for example, enter username here...
+  password  : 'password', //*** ...and enter password here, etc.
+  url_login : 'https://home.trainingpeaks.com/login',
+  pageTitle_calendar : 'TrainingPeaks - Plan your training, track your workouts and measure your progress'
 };
 
 module.exports = {

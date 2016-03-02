@@ -15,7 +15,7 @@ module.exports = function (argument) {
 
 	this.Given(/^The browser is open to the calendar page$/, function (callback) {
 	  this.driver.getTitle().then(function (title) {
-	  	assert.equal(title,myActions.pageTitle_calendar(),'expected page title: <'+myActions.pageTitle_calendar()+'> actual: <'+title+'>');
+	  	assert.equal(title,myActions.pageTitle_calendar,'expected page title: <'+myActions.pageTitle_calendar+'> actual: <'+title+'>');
 		  callback();
 	  });
 	});

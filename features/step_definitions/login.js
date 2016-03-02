@@ -12,23 +12,23 @@ module.exports = function () {
 	var myActions = browserActions.CreateBrowserActions(); 
 
 	this.Given(/^The browser opens to the login page$/,{timeout: 60 * 1000}, function (callback) {
-    this.driver.get(myActions.url_login());
+    this.driver.get(myActions.url_login);
 		this.driver.getCurrentUrl().then(function (browserUrl) {
-			assert.equal(browserUrl,myActions.url_login(),'expected <'+browserUrl+'> was <'+myActions.url_login()+'>');
+			assert.equal(browserUrl,myActions.url_login,'expected <'+browserUrl+'> was <'+myActions.url_login+'>');
 		  callback();
 		});
-	});
+	});														//TODO: FINISH REMOVING PARANTHESIS
 
 	this.When(/^User enters username$/, function (callback) {
 	  // Action
 		this.driver.findElement({id:'Username'})
-			.sendKeys(myActions.username());
+			.sendKeys(myActions.username);
 
 		// Assertion
 		this.driver.findElement({id:'Username'})
 			.getAttribute("value")
 			.then(function (element) {
-				assert.equal(element,myActions.username(),'expected <'+myActions.username()+'> actual <'+element+'>');
+				assert.equal(element,myActions.username,'expected <'+myActions.username+'> actual <'+element+'>');
 			  callback();
 			});
 	});
@@ -36,13 +36,13 @@ module.exports = function () {
 	this.When(/^User enters password$/, function (callback) {
 	  // Action
 		this.driver.findElement({id:'Password'})
-		.sendKeys(myActions.password());
+		.sendKeys(myActions.password);
 
 		//Assertion
 		this.driver.findElement({id:'Password'})
 			.getAttribute("value")
 			.then(function (element) {
-				assert.equal(element,myActions.password(),'expected <'+myActions.password()+'> actual <'+element+'>' );
+				assert.equal(element,myActions.password,'expected <'+myActions.password+'> actual <'+element+'>' );
 			  callback();
 			});
 	});
@@ -60,7 +60,7 @@ module.exports = function () {
 	  // Action
 	  this.driver.sleep(9000);
 	  this.driver.getTitle().then(function (title) {
-	  	assert.equal(title,myActions.pageTitle_calendar(),'expected page title: <'+myActions.pageTitle_calendar()+'> actual: <'+title+'>');
+	  	assert.equal(title,myActions.pageTitle_calendar,'expected page title: <'+myActions.pageTitle_calendar+'> actual: <'+title+'>');
 		  callback();
 	  })
 	});
