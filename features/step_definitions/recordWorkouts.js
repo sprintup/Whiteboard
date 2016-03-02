@@ -25,8 +25,7 @@ module.exports = function (){
 
 	this.When(/^User adds BIKE with heartrate and duration$/, function (callback) {
 	  // Write code here that turns the phrase above into concrete actions
-    this.driver.manage().timeouts().implicitlyWait(5000);
-
+		
     console.log('1');
 	  this.driver.executeScript('document.getElementsByClassName(\'addWorkout\')[70].click()');
     console.log('2');
