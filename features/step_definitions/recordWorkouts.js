@@ -11,7 +11,7 @@ var model = require(process.cwd() + '/spec/model');
 module.exports = function (){
 	var myActions = model.CreateBrowserActions(); 
 	var workouts = model.CreateWorkouts();
-	
+
 	this.When(/^User adds RUN with heartrate and duration$/, function (callback) {
 	  // Write code here that turns the phrase above into concrete actions
 	  this.driver.executeScript('document.getElementsByClassName(\'addWorkout\')[70].click()');
@@ -25,13 +25,33 @@ module.exports = function (){
 
 	this.When(/^User adds BIKE with heartrate and duration$/, function (callback) {
 	  // Write code here that turns the phrase above into concrete actions
+    this.driver.manage().timeouts().implicitlyWait(5000);
+
+    console.log('1');
 	  this.driver.executeScript('document.getElementsByClassName(\'addWorkout\')[70].click()');
+    console.log('2');
 		this.driver.executeScript('document.getElementsByClassName(\'addWorkout Bike future\')[0].click()'); //mod
+    console.log('3');
 		this.driver.findElement({id:'totalTimeCompletedField'}).sendKeys(workouts.bike.duration);	//mod
+    console.log('4');
 		this.driver.findElement({id:'hrAvgField'}).sendKeys(workouts.bike.heartRateThreshold); //mod
-		this.driver.findElement({id:'close'}).click().then(function () {
+    console.log('5');
+		this.driver.sleep(5000);
+    console.log('6');
+		this.driver.findElement({id:'close'}).then(function (closeButton) {
+			console.log('closeButton.isDisplayed(): '+closeButton.isDisplayed());
+			return closeButton.click();
+		})
+		/*
+			After clicking the close button there might be a pop up that says "You have unsaved changes on your workout. Would you like to save these changes". The options are:
+				"Yes"(button data-action="save") 
+				"No"(button data-action="undo") 
+				"Cancel"(button id="userCancel") 
+		*/
+			.then(function () {											
 		  callback();
 		});
+    console.log('7');
 	});
 
 	this.When(/^User adds SWIM with heartrate and duration$/, function (callback) {
