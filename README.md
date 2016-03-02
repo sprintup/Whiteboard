@@ -1,10 +1,9 @@
 ##Update log
 * It tests all excercises.
-* The tests almost pass for all excercises, but I have to look at some element ids. 
-* I'm working on iterating through workout types. 
+* The tests almost pass for all excercises, but some give a StaleElementReferenceError. 
 
 ### Overview
-An automated code test that logs into a website, finds elements and tests caluculated values. It runs cucumberjs with Node assertions and selenium web driver using Chrome. 
+An automated code test that logs into a website, finds elements and tests caluculated values. It runs [cucumberjs](https://github.com/cucumber/cucumber-js) with [Node assertions](https://nodejs.org/api/assert.html) and [selenium web driver](http://appfigures.github.io/webdriver-js-api-reference/symbols/webdriver.WebDriver.html) using Chrome. 
 
 ### Installation
 I added a package.json, so you should just be able to do `npm install` to install these. 
@@ -29,7 +28,7 @@ cucumberjs features/shared/login.feature features/recordWorkouts.feature
 * CLI help: `cucumberjs --help`
 * Supported Formatting styles
 	* `cucumberjs --format progress`
-* Use tags to run only certain tests
+* Use [tags](https://github.com/cucumber/cucumber/wiki/Tags) to run only certain tests
 
 #### Testing
 You can run 'cucumberjs' in the terminal after installing the packages (npm install) from the root directory

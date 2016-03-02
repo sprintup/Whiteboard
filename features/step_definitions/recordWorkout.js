@@ -20,23 +20,16 @@ module.exports = function (argument) {
 	  });
 	});
 
-	// this.When(/^User adds workout with heartrate and duration$/, function (callback) {
-	//   // Write code here that turns the phrase above into concrete actions
-	//   this.driver.executeScript('document.getElementsByClassName(\'addWorkout\')[70].click()');
-	// 	this.driver.executeScript('document.getElementsByClassName(\'addWorkout Run future\')[0].click()');
-	// 	this.driver.findElement({id:'totalTimeCompletedField'}).sendKeys('1:00:00');
-	// 	this.driver.findElement({id:'hrAvgField'}).sendKeys('150');
-	// 	this.driver.findElement({id:'close'}).click().then(function () {
-	// 	  callback();
-	// 	});
-
-	// });
+	/*
+	Workouts are added individually in the recordWorkouts.js step definition file
+	*/
 
 	this.When(/^Inspects workout that was just added$/, function (callback) {
 	  /*
 			This step assumes workout being inspected is most recent workout
 	  */ 
-	  this.driver.sleep(1000); //this is needed for the element to be rendered
+	  this.driver.sleep(1500); //this is needed for the element to be rendered
+	  debugger;
 	  this.driver.executeScript('document.getElementsByClassName(\'workoutDiv\')[document.getElementsByClassName(\'workoutDiv\').length-1].click()').
 	  then(function () {
 	  	callback();

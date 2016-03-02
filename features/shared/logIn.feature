@@ -1,3 +1,4 @@
+@inspect
 Feature: LogIn
 In order to test tTSS the user must log in
 As the user I would like to log in
