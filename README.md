@@ -1,11 +1,11 @@
+### Overview
+An automated code test that logs into a website, finds elements and tests caluculated values. It runs [cucumberjs](https://github.com/cucumber/cucumber-js) with [Node assertions](https://nodejs.org/api/assert.html) and [selenium web driver](http://appfigures.github.io/webdriver-js-api-reference/symbols/webdriver.WebDriver.html) using Chrome. 
+
 ##Update log
 * It tests all excercises.
 * The tests almost pass for all excercises, but some give a StaleElementReferenceError. This is a race condition and I'm working on it. ([link](https://bocoup.com/weblog/a-day-at-the-races))
 * I just watched and amazing [video](https://vimeo.com/96425312?ref=tw-share) on the javascript event loop. I'm digesting it so I can figure out the race condition issue.
 * [If a rejected promise is left unhandled, the offending error will be passed to the active control flow in the next turn of the JavaScript event loop.](https://code.google.com/p/selenium/wiki/WebDriverJs#Value_Propagation_and_Chaining)
-
-### Overview
-An automated code test that logs into a website, finds elements and tests caluculated values. It runs [cucumberjs](https://github.com/cucumber/cucumber-js) with [Node assertions](https://nodejs.org/api/assert.html) and [selenium web driver](http://appfigures.github.io/webdriver-js-api-reference/symbols/webdriver.WebDriver.html) using Chrome. 
 
 ### Installation
 I added a package.json, so you should just be able to do `npm install` to install these. 
